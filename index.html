@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style type="text/css">
+        html,
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .top-menu {
+            position: absolute;
+            width: 100%;
+            height: 5%;
+            top: 0;
+            margin: 0;
+            background-color: #ecdfc9;
+        }
+
+        .swiper-pagination {
+            position: absolute;
+            width: 80%;
+            height: 100%;
+            top: 0;
+            left: 20%;
+            margin: 0;
+        }
+
+        .swiper-pagination-bullet {
+            width: 20%;
+            height: 100%;
+            text-align: center;
+            line-height: 30px;
+            font-size: 12px;
+            font-weight: bolder;
+            color:#000;
+            opacity: 1;
+            background: rgba(0,0,0,0.2);
+            border-radius: 0;
+        }
+
+        .swiper-pagination-bullet-active {
+            color:#fff;
+            background: #F0B24C;
+        }
+
+        .swiper-container {
+            position: absolute;
+            width: 100%;
+            height: 95%;
+            top: 5%;
+            margin: 0;
+        }
+
+        .swiper-slide {
+            background-color: #ecdfc9;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-menu">
+        <img style="height: 100%;" src="./img/logo_img.png" alt="메인로고">
+        <img style="height: 100%;" src="./img/logo_word.png" alt="메인이름">
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <h1>We are SOOM, Make money</h1>
+                <img style="width: 30%;" src="./img/logo_img.png" alt="메인로고">
+                <img style="width: 30%;" src="./img/logo_word.png" alt="메인이름">
+            </div>
+            <div class="swiper-slide">
+                <h1><strong>숨을 만든 사람들</strong></h1>
+                <p>- 맨날 개발자 괴롭히는 <strong>성은</strong><p>
+                <p>- 뭔가 디자이너 아닌거 같은 <strong>시준</strong><p>
+                <p>- 개발 노예 1 <strong>예찬</strong><p>
+                <p>- 개발 노예 2 <strong>재웅</strong> (대학원생도 사람이다!!)<p>
+            </div>
+            <div class="swiper-slide">
+                <h1><strong>개쩌는 숨티커</strong></h1>
+                <p>NFC 기술을 이용한 어쩌구저쩌구...<br><br>녹음을 해서 소리를 전달할 수 있는데 어쩌구저쩌구...<br><br>엄청난 과학의 집합체, 숨티커!!</p>
+            </div>
+            <div class="swiper-slide">
+                <h1><strong>저희 팀과 연락하고 싶다면 여기로!</strong></h1>
+                <p>연락하지마요..... 찾지마요.....</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var menu = ['메인', '회사소개', '제품소개', '컨택'];
+        const swiper = new Swiper('.swiper-container', {
+            direction: 'vertical',
+            loop: false,
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: 'true',
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '">' + (menu[index]) + '</span>';
+                },
+            },
+        });
+    </script>
+</body>
+</html>
