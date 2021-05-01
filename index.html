@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SOOM</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!--1920 x 1080-->
     <style type="text/css">
         html,
         body {
@@ -14,105 +15,248 @@
             justify-content: center;
             align-items: center;
             width: 100%;
+            height: 100%;
             margin: 0;
             overflow: hidden;
         }
 
         .top-menu {
             position: absolute;
+            justify-content: center;
             width: 100%;
-            height: 5%;
+            height: 12%;
             top: 0;
             margin: 0;
-            background-color: #ecdfc9;
+            z-index: 1;
+            border-bottom: 1px solid #BFBFBF;
+            background-color: rgba(255, 255, 255, 0);
         }
 
-        .swiper-pagination {
+        .main-logo {
+            position: relative;
+            height: 70%;
+            top: 15%;
+            left: 2%;
+            padding: 0%;
+            border: none;
+            background-color: rgba(255, 255, 255, 0);
+        }
+        .main-logo img { margin: 0%; height: 100%;}
+
+        .menu {
             position: absolute;
-            width: 80%;
-            height: 100%;
-            top: 0;
-            left: 20%;
+            width: 50%;
+            top: 25%;
+            right: 0%;
             margin: 0;
         }
 
-        .swiper-pagination-bullet {
-            width: 20%;
+        .menu button {
+            width: 30%;
             height: 100%;
             text-align: center;
-            line-height: 30px;
-            font-size: 12px;
+            font-size: 2em;
             font-weight: bolder;
-            color:#000;
+            color:#DEDEDE;
+            background-color: rgba(255, 255, 255, 0);
             opacity: 1;
-            background: rgba(0,0,0,0.2);
+            border: none;
             border-radius: 0;
         }
 
-        .swiper-pagination-bullet-active {
-            color:#fff;
-            background: #F0B24C;
+        .menu button:hover {
+            color:#ACACAC;
         }
 
         .swiper-container {
             position: absolute;
             width: 100%;
-            height: 95%;
-            top: 5%;
+            height: 100%;
+            top: 0;
             margin: 0;
+            z-index: 0;
         }
 
         .swiper-slide {
-            background-color: #ecdfc9;
+            justify-content: center;
+            text-align: center;
+            background-color: #FAFAFA;
+        }
+
+        .swiper-slide img{
+            width: 110%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        .main-text {
+            position: absolute;
+            text-align: center;
+            top: 20%;
+            width: 50%;
+            left: 25%;
+            font-size: 2em;
+            color: #ffffff;
+        }
+
+        #button1 {
+            width: 30%;
+            height: auto;
+            padding: 2%;
+            color: #727272;
+            font-size: 0.5em;
+            font-weight: bold;
+            background-color: white;
+            border-radius: 30px;
+        }
+
+        .top-contents {
+            position: absolute;
+            width: 80%;
+            height: 38%;
+            top: 12%;
+            left: 10%;
+            text-align: center;
+        }
+
+        .bottom-contents {
+            position: absolute;
+            width: 80%;
+            height: 50%;
+            top: 50%;
+            left: 10%;
+            text-align: center;
+        }
+
+        .sub-contents {
+            position: relative;
+            width: 25%;
+            height: 50%;
+            text-align: center;
+            float: left;
+        }
+
+        .sub-contents img{
+            width: auto;
+            height: 90%;
+        }
+
+        .sub-contents p {
+            font-size: 0.8em;
+            line-height: 1.6em;
+            color: #808080;
         }
     </style>
 </head>
 <body>
     <div class="top-menu">
-        <img style="height: 100%;" src="./img/logo_img.png" alt="메인로고">
-        <img style="width: 10%; height: 100%;" src="./img/logo_word.png" alt="메인이름">
-        <div class="swiper-pagination"></div>
+        <button class="main-logo" onclick="location.replace('./index.html');"><img src="./img/main_logo.png" alt="메인 숨 로고"></button>
+        <div class="menu">
+            <button onclick="moveFirstMenu();">HOW TO USE</button>
+            <button onclick="moveSecondMenu();">CART</button>
+            <button onclick="moveThirdMenu();">CONTACT</button>
+        </div>
     </div>
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <h1>We are SOOM, Make money</h1>
-                <img style="width: 30%;" src="./img/logo_img.png" alt="메인로고">
-                <img style="width: 30%;" src="./img/logo_word.png" alt="메인이름">
+                <img src="./img/main_background.png" alt="배경 이미지">
+                <div class="main-text">
+                    <h1><strong>소리를 스티커로 만나요</strong></h1>
+                    <p>머시기 머시기 머시기</p>
+                </div>
             </div>
             <div class="swiper-slide">
-                <h1><strong>숨을 만든 사람들</strong></h1>
-                <p>- 아이디어 뿜뿜 기획자 <strong>성은</strong><p>
-                <p>- 심플 디자인의 선구자 <strong>시준</strong><p>
-                <p>- 개발 노예 1 <strong>예찬</strong><p>
-                <p>- 개발 노예 2 <strong>재웅</strong> (대학원생도 사람이다!!)<p>
+                <img style="position:absolute; height: 70%; width: auto; top: 15%; left: 10%;" src="./img/main_img.png" alt="이미지">
+                <div style="position:absolute; text-align: center; width: 40%; height: 60%; top: 30%; right: 10%; font-size: 2em; line-height: 2em; color: #808080;">
+                    <p>스티커에 소리를 저장하는<br>가장 간편한 방법입니다</p>
+                    <button id="button1">HOW TO USE</button>
+                </div>
             </div>
-            <div class="swiper-slide">
-                <h1><strong>개쩌는 숨티커</strong></h1>
-                <p>NFC 기술을 이용한 어쩌구저쩌구...<br><br>녹음을 해서 소리를 전달할 수 있는데 어쩌구저쩌구...<br><br>엄청난 과학의 집합체, 숨티커!!</p>
+            <div class="swiper-slide" style="background-color: #FFFFFF;">
+                <div class="top-contents">
+                    <h1 style="color: #E1AA4F; font-size: 2.8em; font-weight: bolder; line-height: 2em;">SOOM CULTURE</h1>
+                    <p style="color: #646464; font-size: 1.2em;">우리는 이런거 이런거 해서 소비자에게 색다른<br>경험 제공하려 노력 한번 봐볼래?</p>
+                </div>
+                <div class="bottom-contents">
+                    <div class="sub-contents">
+                        <img src="./img/sub_img.png" alt="서브 이미지">
+                        <p style="color: #E1AA4F; font-size: 1.2em;"><strong>안녕</strong></p>
+                        <p>우리는 이런거 이런거 해서<br>경험 제공하려 노력 한번 봐볼래?</p>
+                    </div>
+                    <div class="sub-contents">
+                        <img src="./img/sub_img.png" alt="서브 이미지">
+                        <p style="color: #E1AA4F; font-size: 1.2em;"><strong>안녕</strong></p>
+                        <p>우리는 이런거 이런거 해서<br>경험 제공하려 노력 한번 봐볼래?</p>
+                    </div>
+                    <div class="sub-contents">
+                        <img src="./img/sub_img.png" alt="서브 이미지">
+                        <p style="color: #E1AA4F; font-size: 1.2em;"><strong>안녕</strong></p>
+                        <p>우리는 이런거 이런거 해서<br>경험 제공하려 노력 한번 봐볼래?</p>
+                    </div>
+                    <div class="sub-contents">
+                        <img src="./img/sub_img.png" alt="서브 이미지">
+                        <p style="color: #E1AA4F; font-size: 1.2em;"><strong>안녕</strong></p>
+                        <p>우리는 이런거 이런거 해서<br>경험 제공하려 노력 한번 봐볼래?</p>
+                    </div>
+                </div>
             </div>
-            <div class="swiper-slide">
-                <h1><strong>저희 팀과 연락하고 싶다면 여기로!</strong></h1>
-                <p>연락하지마요..... 찾지마요.....</p>
+            <div class="swiper-slide" style="background-color: #DDDCCD;">
+                <div class="top-contents">
+                    <h1 style="color: #E1AA4F; font-size: 2.8em; font-weight: bolder; line-height: 2em;">SOOM IMPACT</h1>
+                    <p style="color: #646464; font-size: 1.2em;">우리는 이런거 이런거 해서 소비자에게 색다른<br>경험 제공하려 노력 한번 봐볼래?</p>
+                </div>
+                <div class="bottom-contents">
+                    <div class="sub-contents">
+                        <img src="./img/sub_img1.png" alt="서브 이미지">
+                        <p style="color: #E1AA4F; font-size: 2.8em; font-weight: bolder; line-height: 1em;"><strong>400</strong></p>
+                        <p style="font-size: 1em; font-weight: bolder;">우리가 멋지게 한</p>
+                    </div>
+                    <div class="sub-contents">
+                        <img src="./img/sub_img2.png" alt="서브 이미지">
+                        <p style="color: #E1AA4F; font-size: 2.8em; font-weight: bolder; line-height: 1em;"><strong>50</strong></p>
+                        <p style="font-size: 1em; font-weight: bolder;">우리가 멋지게 한</p>
+                    </div>
+                    <div class="sub-contents">
+                        <img src="./img/sub_img3.png" alt="서브 이미지">
+                        <p style="color: #E1AA4F; font-size: 2.8em; font-weight: bolder; line-height: 1em;"><strong>3</strong></p>
+                        <p style="font-size: 1em; font-weight: bolder;">우리가 멋지게 한</p>
+                    </div>
+                    <div class="sub-contents">
+                        <img src="./img/sub_img4.png" alt="서브 이미지">
+                        <p style="color: #E1AA4F; font-size: 2.8em; font-weight: bolder; line-height: 1em;"><strong>300</strong></p>
+                        <p style="font-size: 1em; font-weight: bolder;">우리가 멋지게 한</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        var menu = ['메인', '회사소개', '제품소개', '컨택'];
         const swiper = new Swiper('.swiper-container', {
             direction: 'vertical',
             loop: false,
+            allowTouchMove: true,
 
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: 'true',
-                renderBullet: function (index, className) {
-                    return '<span class="' + className + '">' + (menu[index]) + '</span>';
-                },
+            mousewheel: {
+                invert: false,
             },
         });
+
+        swiper.on('slideChange', function(){
+            console.log(swiper1.activeIndex);
+        });
+
+        function moveFirstMenu(){
+            swiper.slideTo(1);
+        }
+        function moveSecondMenu(){
+            swiper.slideTo(2);
+        }
+        function moveThirdMenu(){
+            swiper.slideTo(3);
+        }
     </script>
 </body>
 </html>
