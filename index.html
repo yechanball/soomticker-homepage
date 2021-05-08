@@ -9,227 +9,421 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!--1920 x 1080-->
     <style type="text/css">
-        html,
-        body {
-            width: 100%;
-            min-width: 1100px;
-            height: 100%;
-            min-height: 590px;
-            margin: 0;
-            overflow: hidden;
-        }
+        /* PC (해상도 1024px)*/
+        @media all and (min-width:1024px) { 
+            html,
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                font-size: 20px;
+                margin: 0;
+                overflow: hidden;
+            }
 
-        .top-menu {
-            position: absolute;
-            justify-content: center;
-            width: 100%;
-            height: 12%;
-            top: 0;
-            margin: 0;
-            z-index: 1;
-            border-bottom: 1px solid #BFBFBF;
-            background-color: rgba(255, 255, 255, 0);
-        }
+            .wrap {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                background: rgb(255, 255, 255);
+            }
 
-        .main-logo {
-            position: relative;
-            height: 70%;
-            top: 15%;
-            left: 2%;
-            padding: 0%;
-            border: none;
-            background-color: rgba(255, 255, 255, 0);
-        }
-        .main-logo img { margin: 0%; height: 100%;}
+            .top-menu {
+                position: absolute;
+                justify-content: center;
+                width: 100%;
+                height: 80px;
+                top: 0;
+                margin: 0;
+                z-index: 1;
+                border-bottom: 1px solid #BFBFBF;
+                background-color: rgba(255, 255, 255, 0.5);
+            }
 
-        .menu {
-            position: absolute;
-            width: 50%;
-            top: 25%;
-            right: 0%;
-            margin: 0;
-        }
+            .main-logo {
+                position: relative;
+                height: 60px;
+                top: 10px;
+                left: 20px;
+                padding: 0%;
+                border: none;
+                background-color: rgba(255, 255, 255, 0);
+            }
+            .main-logo img { margin: 0%; height: 100%;}
 
-        .menu button {
-            width: 30%;
-            height: 100%;
-            text-align: center;
-            font-size: 2em;
-            font-weight: bolder;
-            color:#DEDEDE;
-            background-color: rgba(255, 255, 255, 0);
-            opacity: 1;
-            border: none;
-            border-radius: 0;
-        }
+            .menu {
+                position: absolute;
+                width: 70%;
+                top: 15px;
+                right: 0%;
+                margin: 0;
+            }
 
-        .menu button:hover {
-            color:#ACACAC;
-        }
+            .menu ul {
+                background-color: rgba(255, 255, 255, 0);
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
 
-        .swiper-container {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            margin: 0;
-            z-index: 0;
-        }
+            .menu ul li {
+                float: left;
+                margin-left: 10%;
+            }
 
-        .swiper-slide {
-            justify-content: center;
-            text-align: center;
-            background-color: #FAFAFA;
-        }
+            .menu ul li a{
+                display: block;
+                text-decoration: none;
+                text-align: center;
+                font-size: 30px;
+                font-weight: bolder;
+                color:#a3a3a3;
+            }
 
-        .swiper-slide img{
-            width: 110%;
-            height: 100%;
-            z-index: 0;
-        }
+            .menu ul li a.current {
+                color:#3b3b3b;
+            }
 
-        .main-text {
-            position: absolute;
-            text-align: center;
-            top: 20%;
-            width: 50%;
-            left: 25%;
-            font-size: 2em;
-            color: #ffffff;
-        }
+            .menu ul li a:hover:not(.current) {
+                color:#707070;
+            }
 
-        #button1 {
-            width: 30%;
-            height: auto;
-            padding: 2%;
-            color: #727272;
-            font-size: 0.5em;
-            font-weight: bold;
-            background-color: white;
-            border-radius: 30px;
-        }
+            .swiper-container {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                margin: 0;
+                z-index: 0;
+            }
 
-        .top-contents {
-            position: absolute;
-            width: 80%;
-            height: 38%;
-            top: 12%;
-            left: 10%;
-            text-align: center;
-        }
+            .swiper-slide {
+                justify-content: center;
+                text-align: center;
+                background-color: #FAFAFA;
+            }
 
-        .bottom-contents {
-            position: absolute;
-            width: 80%;
-            height: 50%;
-            top: 50%;
-            left: 10%;
-            text-align: center;
-        }
+            .swiper-slide img{
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+            }
 
-        .sub-contents {
-            position: relative;
-            width: 25%;
-            height: 50%;
-            text-align: center;
-            float: left;
-        }
+            .main-text {
+                position: absolute;
+                text-align: center;
+                top: 20%;
+                width: 50%;
+                left: 25%;
+                font-size: 2em;
+                color: #ffffff;
+            }
 
-        .sub-contents img{
-            width: auto;
-            height: 90%;
-        }
+            #button1 {
+                width: 30%;
+                height: auto;
+                padding: 2%;
+                color: #727272;
+                font-size: 0.5em;
+                font-weight: bold;
+                background-color: white;
+                border-radius: 30px;
+            }
 
-        .sub-contents p {
-            font-size: 0.8em;
-            line-height: 1.6em;
-            color: #808080;
+            .top-contents {
+                position: absolute;
+                width: 80%;
+                height: 38%;
+                top: 12%;
+                left: 10%;
+                text-align: center;
+            }
+
+            .bottom-contents {
+                position: absolute;
+                width: 80%;
+                height: 50%;
+                top: 50%;
+                left: 10%;
+                text-align: center;
+            }
+
+            .sub-contents {
+                position: relative;
+                width: 25%;
+                height: 50%;
+                text-align: center;
+                float: left;
+            }
+
+            .sub-contents img{
+                width: auto;
+                height: 90%;
+            }
+
+            .sub-contents p {
+                font-size: 0.8em;
+                line-height: 1.6em;
+                color: #808080;
+            }
+        }
+        /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
+        @media all and (min-width:768px) and (max-width:1023px) { 
+            /*스타일입력*/
+        }
+        /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+        @media all and (max-width:767px) { 
+            html,
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                font-size: 10px;
+                margin: 0;
+                overflow: hidden;
+            }
+
+            .wrap {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                background: rgb(255, 255, 255);
+            }
+
+            .top-menu {
+                position: absolute;
+                justify-content: center;
+                width: 100%;
+                height: 40px;
+                top: 0;
+                margin: 0;
+                z-index: 1;
+                border-bottom: 1px solid #BFBFBF;
+                background-color: rgba(255, 255, 255, 0.5);
+            }
+
+            .main-logo {
+                position: relative;
+                height: 30px;
+                top: 5px;
+                left: 10px;
+                padding: 0%;
+                border: none;
+                background-color: rgba(255, 255, 255, 0);
+            }
+            .main-logo img { margin: 0%; height: 100%;}
+
+            .menu {
+                position: absolute;
+                width: 70%;
+                top: 9px;
+                right: 0%;
+                margin: 0;
+            }
+
+            .menu ul {
+                background-color: rgba(255, 255, 255, 0);
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .menu ul li {
+                float: left;
+                margin-left: 5%;
+            }
+
+            .menu ul li a{
+                display: block;
+                text-decoration: none;
+                text-align: center;
+                font-size: 15px;
+                font-weight: bolder;
+                color:#a3a3a3;
+            }
+
+            .menu ul li a.current {
+                color:#3b3b3b;
+            }
+
+            .menu ul li a:hover:not(.current) {
+                color:#707070;
+            }
+
+            .swiper-container {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                margin: 0;
+                z-index: 0;
+            }
+
+            .swiper-slide {
+                justify-content: center;
+                text-align: center;
+                background-color: #FAFAFA;
+            }
+
+            .swiper-slide img{
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+            }
+
+            .main-text {
+                position: absolute;
+                text-align: center;
+                top: 20%;
+                width: 50%;
+                left: 25%;
+                font-size: 2em;
+                color: #ffffff;
+            }
+
+            #button1 {
+                width: 30%;
+                height: auto;
+                padding: 2%;
+                color: #727272;
+                font-size: 0.5em;
+                font-weight: bold;
+                background-color: white;
+                border-radius: 30px;
+            }
+
+            .top-contents {
+                position: absolute;
+                width: 80%;
+                height: 38%;
+                top: 12%;
+                left: 10%;
+                text-align: center;
+            }
+
+            .bottom-contents {
+                position: absolute;
+                width: 80%;
+                height: 50%;
+                top: 50%;
+                left: 10%;
+                text-align: center;
+            }
+
+            .sub-contents {
+                position: relative;
+                width: 25%;
+                height: 50%;
+                text-align: center;
+                float: left;
+            }
+
+            .sub-contents img{
+                width: auto;
+                height: 90%;
+            }
+
+            .sub-contents p {
+                font-size: 0.8em;
+                line-height: 1.6em;
+                color: #808080;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="top-menu">
-        <button class="main-logo" onclick="location.replace('./index.html');"><img src="./img/main_logo.png" alt="메인 숨 로고"></button>
-        <div class="menu">
-            <button onclick="moveFirstMenu();">HOW TO USE</button>
-            <button onclick="moveSecondMenu();">CART</button>
-            <button onclick="moveThirdMenu();">CONTACT</button>
-        </div>
-    </div>
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="./img/main_background.png" alt="배경 이미지">
-                <div class="main-text">
-                    <h1><strong>소리를 스티커로 만나요</strong></h1>
-                    <p>머시기 머시기 머시기</p>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <img style="position:absolute; height: 70%; width: auto; top: 15%; left: 10%;" src="./img/main_img.png" alt="이미지">
-                <div style="position:absolute; text-align: center; width: 40%; height: 60%; top: 30%; right: 10%; font-size: 2em; line-height: 2em; color: #808080;">
-                    <p>스티커에 소리를 저장하는<br>가장 간편한 방법입니다</p>
-                    <button id="button1">HOW TO USE</button>
-                </div>
-            </div>
-            <div class="swiper-slide" style="background-color: #FFFFFF;">
-                <div class="top-contents">
-                    <h1 style="color: #E1AA4F; font-size: 2.8em; font-weight: bolder; line-height: 2em;">SOOM CULTURE</h1>
-                    <p style="color: #646464; font-size: 1.2em;">우리는 이런거 이런거 해서 소비자에게 색다른<br>경험 제공하려 노력 한번 봐볼래?</p>
-                </div>
-                <div class="bottom-contents">
-                    <div class="sub-contents">
-                        <img src="./img/sub_img.png" alt="서브 이미지">
-                        <p style="color: #E1AA4F; font-size: 1.2em;"><strong>안녕</strong></p>
-                        <p>우리는 이런거 이런거 해서<br>경험 제공하려 노력 한번 봐볼래?</p>
-                    </div>
-                    <div class="sub-contents">
-                        <img src="./img/sub_img.png" alt="서브 이미지">
-                        <p style="color: #E1AA4F; font-size: 1.2em;"><strong>안녕</strong></p>
-                        <p>우리는 이런거 이런거 해서<br>경험 제공하려 노력 한번 봐볼래?</p>
-                    </div>
-                    <div class="sub-contents">
-                        <img src="./img/sub_img.png" alt="서브 이미지">
-                        <p style="color: #E1AA4F; font-size: 1.2em;"><strong>안녕</strong></p>
-                        <p>우리는 이런거 이런거 해서<br>경험 제공하려 노력 한번 봐볼래?</p>
-                    </div>
-                    <div class="sub-contents">
-                        <img src="./img/sub_img.png" alt="서브 이미지">
-                        <p style="color: #E1AA4F; font-size: 1.2em;"><strong>안녕</strong></p>
-                        <p>우리는 이런거 이런거 해서<br>경험 제공하려 노력 한번 봐볼래?</p>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide" style="background-color: #DDDCCD;">
-                <div class="top-contents">
-                    <h1 style="color: #E1AA4F; font-size: 2.8em; font-weight: bolder; line-height: 2em;">SOOM IMPACT</h1>
-                    <p style="color: #646464; font-size: 1.2em;">우리는 이런거 이런거 해서 소비자에게 색다른<br>경험 제공하려 노력 한번 봐볼래?</p>
-                </div>
-                <div class="bottom-contents">
-                    <div class="sub-contents">
-                        <img src="./img/sub_img1.png" alt="서브 이미지">
-                        <p style="color: #E1AA4F; font-size: 2.8em; font-weight: bolder; line-height: 1em;"><strong>400</strong></p>
-                        <p style="font-size: 1em; font-weight: bolder;">우리가 멋지게 한</p>
-                    </div>
-                    <div class="sub-contents">
-                        <img src="./img/sub_img2.png" alt="서브 이미지">
-                        <p style="color: #E1AA4F; font-size: 2.8em; font-weight: bolder; line-height: 1em;"><strong>50</strong></p>
-                        <p style="font-size: 1em; font-weight: bolder;">우리가 멋지게 한</p>
-                    </div>
-                    <div class="sub-contents">
-                        <img src="./img/sub_img3.png" alt="서브 이미지">
-                        <p style="color: #E1AA4F; font-size: 2.8em; font-weight: bolder; line-height: 1em;"><strong>3</strong></p>
-                        <p style="font-size: 1em; font-weight: bolder;">우리가 멋지게 한</p>
-                    </div>
-                    <div class="sub-contents">
-                        <img src="./img/sub_img4.png" alt="서브 이미지">
-                        <p style="color: #E1AA4F; font-size: 2.8em; font-weight: bolder; line-height: 1em;"><strong>300</strong></p>
-                        <p style="font-size: 1em; font-weight: bolder;">우리가 멋지게 한</p>
-                    </div>
-                </div>
+    <div class="wrap">
+        <div class="top-menu">
+            <button class="main-logo" onclick="location.replace('./index.html');"><img src="./img/main_logo.png" alt="메인 숨 로고"></button>
+            <div class="menu">
+                <ul>
+                    <li><a class="current" href="#">About</a></li>
+                    <li><a href="#">Guide</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
             </div>
         </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/main_background.png" alt="배경 이미지">
+                    <div class="main-text">
+                        <h1><strong>소리를 스티커로 만나요</strong></h1>
+                        <p>머시기 머시기 머시기</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img style="position:absolute; height: 70%; width: auto; top: 15%; left: 10%;" src="./img/main_img.png" alt="이미지">
+                    <div style="position:absolute; text-align: center; width: 40%; height: 60%; top: 30%; right: 10%; font-size: 2em; line-height: 2em; color: #808080;">
+                        <p>스티커에 소리를 저장하는<br>가장 간편한 방법입니다</p>
+                        <button id="button1">HOW TO USE</button>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-color: #FFFFFF;">
+                    <div class="top-contents">
+                        <h1 style="color: #E1AA4F; font-size: 2.8em; font-weight: bolder; line-height: 2em;">SOOM CULTURE</h1>
+                        <p style="color: #646464; font-size: 1.2em;">우리는 이런거 이런거 해서 소비자에게 색다른<br>경험 제공하려 노력 한번 봐볼래?</p>
+                    </div>
+                    <div class="bottom-contents">
+                        <div class="sub-contents">
+                            <img src="./img/sub_img.png" alt="서브 이미지">
+                            <p style="color: #E1AA4F; font-size: 1.2em;"><strong>안녕</strong></p>
+                            <p>우리는 이런거 이런거 해서<br>경험 제공하려 노력 한번 봐볼래?</p>
+                        </div>
+                        <div class="sub-contents">
+                            <img src="./img/sub_img.png" alt="서브 이미지">
+                            <p style="color: #E1AA4F; font-size: 1.2em;"><strong>안녕</strong></p>
+                            <p>우리는 이런거 이런거 해서<br>경험 제공하려 노력 한번 봐볼래?</p>
+                        </div>
+                        <div class="sub-contents">
+                            <img src="./img/sub_img.png" alt="서브 이미지">
+                            <p style="color: #E1AA4F; font-size: 1.2em;"><strong>안녕</strong></p>
+                            <p>우리는 이런거 이런거 해서<br>경험 제공하려 노력 한번 봐볼래?</p>
+                        </div>
+                        <div class="sub-contents">
+                            <img src="./img/sub_img.png" alt="서브 이미지">
+                            <p style="color: #E1AA4F; font-size: 1.2em;"><strong>안녕</strong></p>
+                            <p>우리는 이런거 이런거 해서<br>경험 제공하려 노력 한번 봐볼래?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-color: #DDDCCD;">
+                    <div class="top-contents">
+                        <h1 style="color: #E1AA4F; font-size: 2.8em; font-weight: bolder; line-height: 2em;">SOOM IMPACT</h1>
+                        <p style="color: #646464; font-size: 1.2em;">우리는 이런거 이런거 해서 소비자에게 색다른<br>경험 제공하려 노력 한번 봐볼래?</p>
+                    </div>
+                    <div class="bottom-contents">
+                        <div class="sub-contents">
+                            <img src="./img/sub_img1.png" alt="서브 이미지">
+                            <p style="color: #E1AA4F; font-size: 2.8em; font-weight: bolder; line-height: 1em;"><strong>400</strong></p>
+                            <p style="font-size: 1em; font-weight: bolder;">우리가 멋지게 한</p>
+                        </div>
+                        <div class="sub-contents">
+                            <img src="./img/sub_img2.png" alt="서브 이미지">
+                            <p style="color: #E1AA4F; font-size: 2.8em; font-weight: bolder; line-height: 1em;"><strong>50</strong></p>
+                            <p style="font-size: 1em; font-weight: bolder;">우리가 멋지게 한</p>
+                        </div>
+                        <div class="sub-contents">
+                            <img src="./img/sub_img3.png" alt="서브 이미지">
+                            <p style="color: #E1AA4F; font-size: 2.8em; font-weight: bolder; line-height: 1em;"><strong>3</strong></p>
+                            <p style="font-size: 1em; font-weight: bolder;">우리가 멋지게 한</p>
+                        </div>
+                        <div class="sub-contents">
+                            <img src="./img/sub_img4.png" alt="서브 이미지">
+                            <p style="color: #E1AA4F; font-size: 2.8em; font-weight: bolder; line-height: 1em;"><strong>300</strong></p>
+                            <p style="font-size: 1em; font-weight: bolder;">우리가 멋지게 한</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
@@ -242,20 +436,6 @@
                 invert: false,
             },
         });
-
-        swiper.on('slideChange', function(){
-            console.log(swiper1.activeIndex);
-        });
-
-        function moveFirstMenu(){
-            swiper.slideTo(1);
-        }
-        function moveSecondMenu(){
-            swiper.slideTo(2);
-        }
-        function moveThirdMenu(){
-            swiper.slideTo(3);
-        }
     </script>
 </body>
 </html>
