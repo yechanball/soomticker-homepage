@@ -5,130 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOOM</title>
+    <link rel="stylesheet" href="./font/NotoSansKR.css" type="text/css">
+    <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <!--1920 x 1080-->
     <style type="text/css">
         html,
         body {
             width: 100%;
             margin: 0;
-            font-family: sans-serif;
-            color: #000000;
-            background: #ffffff;
-        }
-
-        nav { width: 100%; }
-
-        .nav_wrapper {
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 100%;
-            transition: top .5s ease-out;
-            z-index: 9999;
-            background-color: #2f3b3f;
-        }
-
-        .scroll { top: -90px; }
-
-        .no-scroll {
-            top: 0;
-            z-index: 9999;
-        }
-
-        .menu-link { display: none; }
-
-        .spinner-master input[type=checkbox] { display: none; }
-
-        .menu {
-            margin-left: 40%;
-            width: 100%;
-            height: auto;
-            background: #2f3b3f;
-            transition: all 0.3s ease;
-        }
-
-        .menu ul {
-            padding: 0px;
-            margin: 0px;
-            list-style: none;
-            position: relative;
-            display: inline-block;
-        }
-
-        .menu > li > ul.sub_menu {
-            min-width: 10em;
-            padding: 4px 0;
-            background-color: #f4f4f4;
-            border: 1px solid #fff;
-        }
-
-        .menu ul li { padding: 0px; }
-
-        .menu > ul > li { display: inline-block;}
-
-        .menu ul li a {
-            display: block;
-            text-decoration: none;
-            color: #fff;
-            font-size: 14px;
-        }
-
-        .menu ul li a:hover {
-            background: #efa666;
-            color: #fff;
-        }
-
-        .menu ul li.hover > a {
-            background: #efa666;
-            color: #fff;
-        }
-
-        .menu ul li > a { padding: 15px; }
-
-        .menu ul ul {
-            display: none;
-            position: absolute;
-            top: 100%;
-            min-width: 160px;
-            background: #39484d;
-        }
-
-        .menu ul li:hover > ul { display: block; }
-
-        .menu ul ul > li { position: relative; }
-
-        .menu ul ul > li a {
-            padding: 10px 15px;
-            height: auto;
-            background: #39484d;
-        }
-
-        .menu ul ul > li a:hover {
-            background: #efa666;
-            color: #fff;
-        }
-
-        .menu ul ul ul {
-            position: absolute;
-            left: 100%;
-            top: 0;
         }
 
         /* PC (해상도 1024px)*/
         @media all and (min-width:768px)/*(min-width:1024px)*/ { 
-            .main-logo {
-                position: absolute;
-                height: 30px;
-                top: 8px;
-                left: 10px;
-                padding: 0%;
-                border: none;
-                background-color: rgba(255, 255, 255, 0);
-            }
-            .main-logo img { margin: 0%; height: 100%;}
-
             .swiper-container {
                 position: absolute;
                 width: 100%;
@@ -144,68 +33,10 @@
                 background-color: #FAFAFA;
             }
 
-            .swiper-slide img{
-                width: 100%;
-                height: 100%;
-                z-index: 0;
-            }
-
-            .main-text {
-                position: absolute;
-                text-align: center;
-                top: 20%;
-                width: 50%;
-                left: 25%;
-                font-size: 1.5em;
-                color: #ffffff;
-            }
-
-            #button1 {
-                width: 30%;
-                height: auto;
-                padding: 2%;
-                color: #727272;
-                font-size: 0.5em;
-                font-weight: bold;
-                background-color: white;
-                border-radius: 30px;
-            }
-
-            .top-contents {
-                position: absolute;
-                width: 80%;
-                height: 38%;
-                top: 12%;
-                left: 10%;
-                text-align: center;
-            }
-
-            .bottom-contents {
-                position: absolute;
-                width: 80%;
-                height: 50%;
-                top: 50%;
-                left: 10%;
-                text-align: center;
-            }
-
-            .sub-contents {
-                position: relative;
-                width: 25%;
-                height: 50%;
-                text-align: center;
-                float: left;
-            }
-
-            .sub-contents img{
-                width: auto;
-                height: 90%;
-            }
-
-            .sub-contents p {
-                font-size: 0.8em;
-                line-height: 1.6em;
-                color: #808080;
+            #main_video {
+                width: 100%; 
+                height: auto; 
+                overflow: hidden;
             }
         }
         /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
@@ -214,183 +45,6 @@
         }*/
         /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
         @media all and (max-width:767px) {
-            p, h1 {
-                font-size: 1em;
-            }
-
-            .menu {
-                margin-left: 0;
-                width: 100%;
-                height: auto;
-                background: #2f3b3f;
-                transition: all 0.3s ease;
-            }
-
-            /* menu */
-            .spinner-master * {
-                transition: all 0.3s;
-                box-sizing: border-box;
-            }
-
-            .spinner-master {
-                position: relative;
-                margin: 15px;
-                height: 30px;
-                width: 30px;
-                float: right;
-            }
-
-            .spinner-master label {
-                cursor: pointer;
-                position: absolute;
-                z-index: 99;
-                height: 100%;
-                width: 100%;
-                top: 5px;
-                left: 0;
-            }
-
-            .spinner-master .spinner {
-                position: absolute;
-                height: 4px;
-                width: 100%;
-                padding: 0;
-                background-color: #fff;
-            }
-
-            .spinner-master .diagonal.part-1 {
-                position: relative;
-                float: left;
-            }
-
-            .spinner-master .horizontal {
-                position: relative;
-                float: left;
-                margin-top: 4px;
-            }
-
-            .spinner-master .diagonal.part-2 {
-                position: relative;
-                float: left;
-                margin-top: 4px;
-            }
-
-            .spinner-master input[type=checkbox]:checked ~ .spinner-spin > .horizontal { opacity: 0; }
-
-            .spinner-master input[type=checkbox]:checked ~ .spinner-spin > .diagonal.part-1 {
-                transform: rotate(135deg);
-                -webkit-transform: rotate(135deg);
-                margin-top: 10px;
-            }
-
-            .spinner-master input[type=checkbox]:checked ~ .spinner-spin > .diagonal.part-2 {
-                transform: rotate(-135deg);
-                -webkit-transform: rotate(-135deg);
-                margin-top: -12px;
-            }
-
-            a.menu-link {
-                display: block;
-                color: #fff;
-                float: left;
-                text-decoration: none;
-                padding: 10px 16px;
-                font-size: 1.5em;
-            }
-
-            a.menu-link:hover { color: #efa666; }
-
-            a.menu-link:after {
-                content: "\2630";
-                font-weight: normal;
-            }
-
-            a.menu-link.active:after { content: "\2715"; }
-
-            .menu {
-                clear: both;
-                min-width: inherit;
-                float: none;
-            }
-
-            .menu,
-            .menu > ul ul {
-                overflow: hidden;
-                max-height: 0;
-                background-color: #39484d;
-            }
-
-            .menu > li > ul.sub-menu {
-                padding: 0px;
-                border: none;
-            }
-
-            .menu.active,
-            .menu > ul ul.active { max-height: 55em; }
-
-            .menu ul { display: inline; }
-
-            .menu li,
-            .menu > ul > li { display: block; }
-
-            .menu > ul > li:last-of-type a { border: none; }
-
-            .menu li a {
-                color: #fff;
-                display: block;
-                padding: 0.8em;
-                position: relative;
-            }
-
-            .menu li.has-submenu > a:after {
-                content: '+';
-                position: absolute;
-                top: 0;
-                right: 0;
-                display: block;
-                font-size: 1.5em;
-                padding: 0.55em 0.5em;
-            }
-
-            .menu li.has-submenu > a.active:after { content: "-"; }
-
-            .menu ul ul > li a {
-                background-color: #39484d;
-                padding: 10px 18px 10px 30px;
-            }
-
-            .menu ul li a:hover {
-                background: #4b5f65;
-                color: #fff;
-            }
-
-            .menu ul li.hover > a {
-                background: #4b5f65;
-                color: #fff;
-            }
-
-            .menu ul ul,
-            .menu ul ul ul {
-                display: inherit;
-                position: relative;
-                left: auto;
-                top: auto;
-                border: none;
-            }
-            
-
-            /* content */
-            .main-logo {
-                position: absolute;
-                margin: 15px;
-                height: 30px;
-                width: 30px;
-                padding: 0%;
-                border: none;
-                background-color: rgba(255, 255, 255, 0);
-            }
-            .main-logo img { margin: 0%; height: 100%;}
-
             .swiper-container {
                 position: absolute;
                 width: 100%;
@@ -406,68 +60,12 @@
                 background-color: #FAFAFA;
             }
 
-            .swiper-slide img{
-                width: 100%;
-                height: 100%;
-                z-index: 0;
-            }
-
-            .main-text {
+            #main_video { 
                 position: absolute;
-                text-align: center;
-                top: 20%;
-                width: 50%;
-                left: 25%;
-                font-size: 1.5em;
-                color: #ffffff;
-            }
-
-            #button1 {
-                width: 30%;
-                height: auto;
-                padding: 2%;
-                color: #727272;
-                font-size: 0.5em;
-                font-weight: bold;
-                background-color: white;
-                border-radius: 10px;
-            }
-
-            .top-contents {
-                position: absolute;
-                width: 80%;
-                height: 38%;
-                top: 12%;
-                left: 10%;
-                text-align: center;
-            }
-
-            .bottom-contents {
-                position: absolute;
-                width: 80%;
-                height: 50%;
-                top: 50%;
-                left: 10%;
-                text-align: center;
-            }
-
-            .sub-contents {
-                position: relative;
-                width: 25%;
-                height: 20%;
-                text-align: center;
-                float: left;
-            }
-
-            .sub-contents img{
-                width: auto;
-                height: 90%;
-            }
-
-            .sub-contents p {
-                font-size: 0.8em;
-                line-height: 1.6em;
-                color: #808080;
+                left: -70%;
+                width: auto; 
+                height: 100%; 
+                overflow: hidden;
             }
         }
     </style>
@@ -475,7 +73,7 @@
 <body>
     <!--menu-->
     <div class="nav_wrapper">
-        <button class="main-logo" onclick="location.replace('./index.html');"><img src="./img/main_logo.png" alt="main logo"></button>
+        <button class="main-logo" onclick="location.replace('./index.html');"><img src="./src/img/main_logo.png" alt="main logo"></button>
         <!--<a class="menu-link" href="#menu"></a>-->
         <div class="spinner-master">
             <input type="checkbox" id="spinner-form" />
@@ -489,152 +87,60 @@
             <ul class="dropdown">
                 <li><a href="#Link" title="Link">About</a>
                     <ul>
-                        <li><a href="./about.html" title="제품설명">제품설명</a></li>
-                        <li><a href="#Link" title="Link">만든이유</a></li>
-                        <li><a href="#Link" title="Link">사용예시</a></li>
+                        <li><a href="./about1.html" title="소개">소개</a></li>
+                        <li><a href="#Link" title="Link">스토리</a></li>
                     </ul>
                 </li>
                 <li><a href="#Link" title="Link">Guide</a>
                     <ul>
                         <li><a href="#Link" title="Link">사용방법</a></li>
-                        <li><a href="#Link" title="Link">사용후기</a></li>
+                        <li><a href="#Link" title="Link">FAQ</a></li>
                     </ul>
                 </li>
                 <li><a href="#Link" title="Link">Product</a>
                     <ul>
-                        <li><a href="#Link" title="Link">구성/가격</a></li>
-                        <li><a href="#Link" title="Link">입금정보</a></li>
-                        <li><a href="#Link" title="Link">환불/교환</a></li>
+                        <li><a href="#Link" title="Link">구매</a></li>
                     </ul>
                 </li>
-                <li><a href="#Link" title="Link">Contact</a></li>
+                <li><a href="#Link" title="Link">Contact</a>
+                    <ul>
+                        <li><a href="#Link" title="Link">문의처</a></li>
+                        <li><a href="#Link" title="Link">교환 및 환분</a></li>
+                        <li><a href="#Link" title="Link">이용약관</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </div>
+
     <!--swiper content-->
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img src="./img/main_background.png" alt="배경 이미지">
-                <div class="main-text">
-                    <h1><strong>소리를 스티커로 만나요</strong></h1>
-                    <p>머시기 머시기 머시기</p>
-                </div>
+                <video id="main_video" type="video/mp4" src="./src/video/main_video.mp4" autoplay loop muted="muted">
+                    해당 브라우저는 video 태그를 지원하지 않습니다.
+                </video>
+                <script>
+                    document.getElementById('main_video').play();
+                </script>
             </div>
             <div class="swiper-slide">
-                <img style="position:absolute; width: 30%; height: 60%; top: 20%; left: 10%;" src="./img/main_img.png" alt="이미지">
-                <div style="position:absolute; text-align: center; width: 40%; height: 60%; top: 30%; right: 10%; font-size: 2em; line-height: 2em; color: #808080;">
-                    <p>스티커에 소리를 저장하는<br>가장 간편한 방법입니다</p>
-                    <button id="button1" onClick="location.href='./guide.html'">HOW TO USE</button>
-                </div>
+                <br><br><br><h1>Main slide 02</h1>
             </div>
-            <div class="swiper-slide" style="background-color: #FFFFFF;">
-                <div class="top-contents">
-                    <h1 style="color: #E1AA4F; font-size: 2.8em; font-weight: bolder; line-height: 2em;">SOOM CULTURE</h1>
-                    <p style="color: #646464; font-size: 1.2em;">우리는 이런거 이런거 해서 소비자에게 색다른<br>경험 제공하려 노력 한번 봐볼래?</p>
-                </div>
-                <div class="bottom-contents">
-                    <div class="sub-contents">
-                        <img src="./img/sub_img.png" alt="서브 이미지">
-                        <p style="color: #E1AA4F; font-size: 1.2em;"><strong>안녕</strong></p>
-                        <p>우리는 이런거 이런거 해서<br>경험 제공하려 노력 한번 봐볼래?</p>
-                    </div>
-                    <div class="sub-contents">
-                        <img src="./img/sub_img.png" alt="서브 이미지">
-                        <p style="color: #E1AA4F; font-size: 1.2em;"><strong>안녕</strong></p>
-                        <p>우리는 이런거 이런거 해서<br>경험 제공하려 노력 한번 봐볼래?</p>
-                    </div>
-                    <div class="sub-contents">
-                        <img src="./img/sub_img.png" alt="서브 이미지">
-                        <p style="color: #E1AA4F; font-size: 1.2em;"><strong>안녕</strong></p>
-                        <p>우리는 이런거 이런거 해서<br>경험 제공하려 노력 한번 봐볼래?</p>
-                    </div>
-                    <div class="sub-contents">
-                        <img src="./img/sub_img.png" alt="서브 이미지">
-                        <p style="color: #E1AA4F; font-size: 1.2em;"><strong>안녕</strong></p>
-                        <p>우리는 이런거 이런거 해서<br>경험 제공하려 노력 한번 봐볼래?</p>
-                    </div>
-                </div>
+            <div class="swiper-slide">
+                <br><br><br><h1>Main slide 03</h1>
             </div>
-            <div class="swiper-slide" style="background-color: #DDDCCD;">
-                <div class="top-contents">
-                    <h1 style="color: #E1AA4F; font-size: 2.8em; font-weight: bolder; line-height: 2em;">SOOM IMPACT</h1>
-                    <p style="color: #646464; font-size: 1.2em;">우리는 이런거 이런거 해서 소비자에게 색다른<br>경험 제공하려 노력 한번 봐볼래?</p>
-                </div>
-                <div class="bottom-contents">
-                    <div class="sub-contents">
-                        <img src="./img/sub_img1.png" alt="서브 이미지">
-                        <p style="color: #E1AA4F; font-size: 2.8em; font-weight: bolder; line-height: 1em;"><strong>400</strong></p>
-                        <p style="font-size: 1em; font-weight: bolder;">우리가 멋지게 한</p>
-                    </div>
-                    <div class="sub-contents">
-                        <img src="./img/sub_img2.png" alt="서브 이미지">
-                        <p style="color: #E1AA4F; font-size: 2.8em; font-weight: bolder; line-height: 1em;"><strong>50</strong></p>
-                        <p style="font-size: 1em; font-weight: bolder;">우리가 멋지게 한</p>
-                    </div>
-                    <div class="sub-contents">
-                        <img src="./img/sub_img3.png" alt="서브 이미지">
-                        <p style="color: #E1AA4F; font-size: 2.8em; font-weight: bolder; line-height: 1em;"><strong>3</strong></p>
-                        <p style="font-size: 1em; font-weight: bolder;">우리가 멋지게 한</p>
-                    </div>
-                    <div class="sub-contents">
-                        <img src="./img/sub_img4.png" alt="서브 이미지">
-                        <p style="color: #E1AA4F; font-size: 2.8em; font-weight: bolder; line-height: 1em;"><strong>300</strong></p>
-                        <p style="font-size: 1em; font-weight: bolder;">우리가 멋지게 한</p>
-                    </div>
-                </div>
+            <div class="swiper-slide">
+                <br><br><br><h1>Main slide 04</h1>
             </div>
         </div>
     </div>
     
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./js/nav.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        // drop down menu
-        ($('ul li:has(ul)')).addClass('has-submenu');
-        ($('ul li ul')).addClass('sub-menu');
-        ($('ul.dropdown li')).hover(function () {
-            ($(this)).addClass('hover');
-        }, function () {
-            ($(this)).removeClass('hover');
-        });
-        var $menu = ($('#menu')), $menulink = ($('#spinner-form')), $menuTrigger = ($('.has-submenu > a'));
-        $menulink.click(function (e) {
-            $menulink.toggleClass('active');
-            $menu.toggleClass('active');
-        });
-        $menuTrigger.click(function (e) {
-            e.preventDefault();
-            var t = $(this);
-            t.toggleClass('active').next('ul').toggleClass('active');
-        });
-        ($('ul li:has(ul)'));
-        ($(function () {
-            var e = ($(document)).scrollTop();
-            var t = ($('.nav_wrapper')).outerHeight();
-            ($(window)).scroll(function () {
-                var n = ($(document)).scrollTop();
-                if (($(document)).scrollTop() >= 50) {
-                    ($('.nav_wrapper')).css('position', 'fixed');
-                } else {
-                    ($('.nav_wrapper')).css('position', 'fixed');
-                }
-                if (n > t) {
-                    ($('.nav_wrapper')).addClass('scroll');
-                } else {
-                    ($('.nav_wrapper')).removeClass('scroll');
-                }
-                if (n > e) {
-                    ($('.nav_wrapper')).removeClass('no-scroll');
-                } else {
-                    ($('.nav_wrapper')).addClass('no-scroll');
-                }
-                e = ($(document)).scrollTop();
-            });
-        }));
-
-        // swiper content
         const swiper = new Swiper('.swiper-container', {
             direction: 'vertical',
             loop: false,
