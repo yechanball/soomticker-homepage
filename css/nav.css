@@ -1,0 +1,295 @@
+nav { width: 100%; }
+
+.nav_wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transition: top .5s ease-out;
+    z-index: 9999;
+    background-color: #FFFFFF;
+    opacity: 0.83;
+}
+
+.scroll { top: -90px; }
+
+.no-scroll {
+    top: 0;
+    z-index: 9999;
+}
+
+.menu-link { display: none; }
+
+.spinner-master input[type=checkbox] { display: none; }
+
+.menu {
+    margin-left: 60%;
+    width: 100%;
+    height: auto;
+    background: #FFFFFF;
+    transition: all 0.3s ease;
+}
+
+.menu ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    position: relative;
+    display: inline-block;
+}
+
+.menu > li > ul.sub_menu {
+    min-width: 10em;
+    padding: 4px 0;
+    background-color: #FFFFFF;
+    border: 1px solid #fff;
+}
+
+.menu ul li { padding: 0px;}
+
+.menu > ul > li { display: inline-block; text-align: center;}
+
+.menu ul li a {
+    display: block;
+    text-decoration: none;
+    font-family: 'Noto Sans KR Medium';
+    font-size: 18px;
+    color: #8B8B8B;
+}
+
+.menu ul li a:hover {
+    color: #4B4B4B;
+}
+
+.menu ul li.hover > a {
+    color: #4B4B4B;
+}
+
+.menu ul li > a { padding: 15px; }
+
+.menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    min-width: 160px;
+    background: #FFFFFF;
+}
+
+.menu ul li:hover > ul { display: block; }
+
+.menu ul ul > li { position: relative; text-align: center;}
+
+.menu ul ul > li a {
+    padding: 15px;
+    height: auto;
+    font-family: 'Noto Sans KR Medium';
+    font-size: 14px;
+    color: #BEBEBE;
+    background: #FFFFFF;
+}
+
+.menu ul ul > li a:hover {
+    color: #E1AA4F;
+}
+
+.menu ul ul ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+/* PC (해상도 1024px)*/
+@media all and (min-width:768px)/*(min-width:1024px)*/ { 
+    .main-logo {
+        position: absolute;
+        height: 34px;
+        top: 10px;
+        left: 40px;
+        padding: 0%;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+        cursor: pointer;
+    }
+    .main-logo img { margin: 0%; height: 100%;}
+}
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
+/*@media all and (min-width:768px) and (max-width:1023px) { 
+    //스타일입력
+}*/
+
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+@media all and (max-width:767px) {
+    .menu {
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+        background: #FFFFFF;
+        transition: all 0.3s ease;
+    }
+
+    /* menu */
+    .spinner-master * {
+        transition: all 0.3s;
+        box-sizing: border-box;
+    }
+
+    .spinner-master {
+        position: relative;
+        margin: 15px;
+        height: 30px;
+        width: 30px;
+        float: right;
+    }
+
+    .spinner-master label {
+        cursor: pointer;
+        position: absolute;
+        z-index: 99;
+        height: 100%;
+        width: 100%;
+        top: 5px;
+        left: 0;
+    }
+
+    .spinner-master .spinner {
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        padding: 0;
+        background-color: #8B8B8B;
+    }
+
+    .spinner-master .diagonal.part-1 {
+        position: relative;
+        float: left;
+    }
+
+    .spinner-master .horizontal {
+        position: relative;
+        float: left;
+        margin-top: 4px;
+    }
+
+    .spinner-master .diagonal.part-2 {
+        position: relative;
+        float: left;
+        margin-top: 4px;
+    }
+
+    .spinner-master input[type=checkbox]:checked ~ .spinner-spin > .horizontal { opacity: 0; }
+
+    .spinner-master input[type=checkbox]:checked ~ .spinner-spin > .diagonal.part-1 {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+        margin-top: 10px;
+    }
+
+    .spinner-master input[type=checkbox]:checked ~ .spinner-spin > .diagonal.part-2 {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+        margin-top: -12px;
+    }
+
+    a.menu-link {
+        display: block;
+        color: #8B8B8B;
+        float: left;
+        text-decoration: none;
+        padding: 10px 16px;
+        font-size: 1.5em;
+    }
+
+    a.menu-link:hover { color: #E1AA4F; }
+
+    a.menu-link:after {
+        content: "\2630";
+        font-weight: normal;
+    }
+
+    a.menu-link.active:after { content: "\2715"; }
+
+    .menu {
+        clear: both;
+        min-width: inherit;
+        float: none;
+    }
+
+    .menu,
+    .menu > ul ul {
+        overflow: hidden;
+        max-height: 0;
+        background-color: #FFFFFF;
+    }
+
+    .menu > li > ul.sub-menu {
+        padding: 0px;
+        border: none;
+    }
+
+    .menu.active,
+    .menu > ul ul.active { max-height: 55em; }
+
+    .menu ul { display: inline; }
+
+    .menu li,
+    .menu > ul > li { display: block; }
+
+    .menu > ul > li:last-of-type a { border: none; }
+
+    .menu li a {
+        color: #8B8B8B;
+        display: block;
+        padding: 0.8em;
+        position: relative;
+    }
+
+    .menu li.has-submenu > a:after {
+        content: '+';
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        font-size: 1.5em;
+        padding: 0.55em 0.5em;
+    }
+
+    .menu li.has-submenu > a.active:after { content: "-"; }
+
+    .menu ul ul > li a {
+        background-color: #FFFFFF;
+        padding: 10px 18px 10px 30px;
+    }
+
+    .menu ul li a:hover {
+        background: #FFFFFF;
+        color: #4B4B4B;
+    }
+
+    .menu ul li.hover > a {
+        background: #FFFFFF;
+        color: #4B4B4B;
+    }
+
+    .menu ul ul,
+    .menu ul ul ul {
+        display: inherit;
+        position: relative;
+        left: auto;
+        top: auto;
+        border: none;
+    }
+    
+
+    /* content */
+    .main-logo {
+        position: absolute;
+        margin: 15px;
+        height: 30px;
+        width: 30px;
+        padding: 0%;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .main-logo img { margin: 0%; height: 100%;}
+}
