@@ -112,16 +112,16 @@ body {
 
     .main-slide-2 h1 {
         font-family: 'Noto Sans KR Light';
-        font-size: 30px;
+        font-size: 28px;
         color: #505050;
     }
 
     .main-slide-2 p {
         font-family: 'Noto Sans KR Light';
         font-size: 17px;
-        line-height: 40px;
+        line-height: 34px;
         color: #646464;
-        margin-top: calc((100vw/375)*40);
+        margin-top: calc((100vw/375)*30);
     }
 
     .main-slide-2 button {
@@ -134,7 +134,7 @@ body {
         max-width: 250px;
         height: 50px;
         max-height: 50px;
-        margin-top: calc((100vw/375)*20);
+        margin-top: calc((100vw/375)*15);
         border: 1px solid #808080;
         border-radius: 40px;
         cursor: pointer;

@@ -203,7 +203,7 @@ nav { width: 100%; }
         float: left;
         text-decoration: none;
         padding: 10px 16px;
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     a.menu-link:hover { color: #E1AA4F; }
@@ -242,6 +242,13 @@ nav { width: 100%; }
     .menu > ul > li { display: block; }
 
     .menu > ul > li:last-of-type a { border: none; }
+
+    .menu ul li a {
+        font-size: 14px;
+    }
+    .menu ul ul > li a {
+        font-size: 13px;
+    }
 
     .menu li a {
         color: #8B8B8B;
