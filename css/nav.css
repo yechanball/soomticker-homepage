@@ -23,8 +23,7 @@ nav { width: 100%; }
 .spinner-master input[type=checkbox] { display: none; }
 
 .menu {
-    margin-left: 60%;
-    width: 100%;
+    width: 90%;
     height: auto;
     background: #FFFFFF;
     transition: all 0.3s ease;
@@ -53,7 +52,7 @@ nav { width: 100%; }
     display: block;
     text-decoration: none;
     font-family: 'Noto Sans KR Medium';
-    font-size: 18px;
+    font-size: calc((100vw/1920)*35);
     color: #8B8B8B;
 }
 
@@ -83,7 +82,7 @@ nav { width: 100%; }
     padding: 15px;
     height: auto;
     font-family: 'Noto Sans KR Medium';
-    font-size: 14px;
+    font-size: calc((100vw/1920)*27);
     color: #BEBEBE;
     background: #FFFFFF;
 }
@@ -100,11 +99,15 @@ nav { width: 100%; }
 
 /* PC (해상도 1024px)*/
 @media all and (min-width:768px)/*(min-width:1024px)*/ { 
+    .dropdown {
+        float: right;
+    }
+
     .main-logo {
         position: absolute;
-        height: 34px;
-        top: 10px;
-        left: 40px;
+        height: calc((100vw/1920)*50);
+        top: calc((100vw/1920)*15);
+        left: calc((100vw/1920)*65);
         padding: 0%;
         border: none;
         background-color: rgba(255, 255, 255, 0);
@@ -121,11 +124,14 @@ nav { width: 100%; }
 /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
 @media all and (max-width:767px) {
     .menu {
-        margin-left: 0;
         width: 100%;
         height: auto;
         background: #FFFFFF;
         transition: all 0.3s ease;
+    }
+
+    .dropdown {
+        float: none;
     }
 
     /* menu */
@@ -280,8 +286,6 @@ nav { width: 100%; }
         border: none;
     }
     
-
-    /* content */
     .main-logo {
         position: absolute;
         margin: 15px;
@@ -290,6 +294,7 @@ nav { width: 100%; }
         padding: 0%;
         border: none;
         background-color: rgba(255, 255, 255, 0);
+        cursor: pointer;
     }
     .main-logo img { margin: 0%; height: 100%;}
 }

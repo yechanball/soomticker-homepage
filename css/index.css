@@ -1,0 +1,142 @@
+html,
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.swiper-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    margin: 0;
+    z-index: 0;
+}
+
+.swiper-slide {
+    justify-content: center;
+    text-align: center;
+    background-color: #FAFAFA;
+}
+
+/* PC (해상도 1024px)*/
+@media all and (min-width:768px) { 
+    #main_video {
+        width: 100%; 
+        height: 100%; 
+        overflow: hidden;
+    }
+
+    .main-slide-2 img {
+        position: absolute;
+        top: calc((100vw/1920)*170);
+        left: calc((100vw/1920)*120);
+        width: calc((100vw/1920)*900);
+        height: auto;
+    }
+
+    .main-slide-2 div {
+        position: absolute;
+        top: calc((100vw/1920)*270);
+        left: calc((100vw/1920)*1180);
+        width: calc((100vw/1920)*490);
+        height: auto;
+        text-align: center;
+    }
+
+    .main-slide-2 h1 {
+        font-family: 'Noto Sans KR Light';
+        font-size: calc((100vw/1920)*66);
+        color: #505050;
+    }
+
+    .main-slide-2 p {
+        font-family: 'Noto Sans KR Light';
+        font-size: calc((100vw/1920)*25);
+        line-height: calc((100vw/1920)*42);
+        color: #646464;
+        margin-top: calc((100vw/1920)*130);
+    }
+
+    .main-slide-2 button {
+        font-family: 'Noto Sans KR Medium';
+        font-size: calc((100vw/1920)*30);
+        color: #727272;
+        background-color: #FFFFFF;
+        text-align: center;
+        width: calc((100vw/1920)*360);
+        height: calc((100vw/1920)*85);
+        margin-top: calc((100vw/1920)*50);
+        border: 1px solid #808080;
+        border-radius: 40px;
+        cursor: pointer;
+    }
+}
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
+/*@media all and (min-width:768px) and (max-width:1023px) { 
+    style input
+}*/
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+@media all and (max-width:767px) {
+    #main_video { 
+        position: absolute;
+        width: 767px;
+        left: calc((100vw - 767px)/2);
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .main-slide-2 img {
+        position: absolute;
+        top: calc((100vw/375)*80);
+        left: calc((100vw/375)*25);
+        width: calc((100vw/375)*325);
+        max-width: 325px;
+        height: auto;
+    }
+
+    .main-slide-2 div {
+        position: absolute;
+        bottom: calc((100vw/375)*30);
+        left: calc((100vw/375)*37.5);
+        width: calc((100vw/375)*300);
+        max-width: 300px;
+        height: auto;
+        text-align: center;
+    }
+
+    .main-slide-2 h1 {
+        font-family: 'Noto Sans KR Light';
+        font-size: 30px;
+        color: #505050;
+    }
+
+    .main-slide-2 p {
+        font-family: 'Noto Sans KR Light';
+        font-size: 17px;
+        line-height: 40px;
+        color: #646464;
+        margin-top: calc((100vw/375)*40);
+    }
+
+    .main-slide-2 button {
+        font-family: 'Noto Sans KR Medium';
+        font-size: 20px;
+        color: #727272;
+        background-color: #FFFFFF;
+        text-align: center;
+        width: calc((100vw/375)*250);
+        max-width: 250px;
+        height: 50px;
+        max-height: 50px;
+        margin-top: calc((100vw/375)*20);
+        border: 1px solid #808080;
+        border-radius: 40px;
+        cursor: pointer;
+    }
+}

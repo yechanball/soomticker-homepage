@@ -9,71 +9,12 @@
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <style type="text/css">
-        html,
-        body {
-            width: 100%;
-            margin: 0;
-        }
-
-        /* PC (해상도 1024px)*/
-        @media all and (min-width:768px)/*(min-width:1024px)*/ { 
-            .swiper-container {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                margin: 0;
-                z-index: 0;
-            }
-
-            .swiper-slide {
-                justify-content: center;
-                text-align: center;
-                background-color: #FAFAFA;
-            }
-
-            #main_video {
-                width: 100%; 
-                height: auto; 
-                overflow: hidden;
-            }
-        }
-        /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
-        /*@media all and (min-width:768px) and (max-width:1023px) { 
-            //스타일입력
-        }*/
-        /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
-        @media all and (max-width:767px) {
-            .swiper-container {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                margin: 0;
-                z-index: 0;
-            }
-
-            .swiper-slide {
-                justify-content: center;
-                text-align: center;
-                background-color: #FAFAFA;
-            }
-
-            #main_video { 
-                position: absolute;
-                left: -70%;
-                width: auto; 
-                height: 100%; 
-                overflow: hidden;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
     <!--menu-->
     <div class="nav_wrapper">
-        <button class="main-logo" onclick="location.replace('./index.html');"><img src="./src/img/main_logo.png" alt="main logo"></button>
+        <button class="main-logo" onclick="location.replace('./index.html');"><img src="./src/img/main_logo.png" alt="□"></button>
         <!--<a class="menu-link" href="#menu"></a>-->
         <div class="spinner-master">
             <input type="checkbox" id="spinner-form" />
@@ -116,7 +57,7 @@
     <!--swiper content-->
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <div class="swiper-slide" style="background-color: #000000f1;">
                 <video id="main_video" type="video/mp4" src="./src/video/main_video.mp4" autoplay loop muted="muted">
                     해당 브라우저는 video 태그를 지원하지 않습니다.
                 </video>
@@ -124,8 +65,14 @@
                     document.getElementById('main_video').play();
                 </script>
             </div>
-            <div class="swiper-slide">
-                <br><br><br><h1>Main slide 02</h1>
+            <div class="swiper-slide main-slide-2">
+                <img src="./src/img/howtouse02.gif" alt="□">
+                <div>
+                    <h1>듣는 스티커 ‘숨’</h1>
+                    <p>여러분의 제품에 고객님의 이야기가 
+                        <br>담길 수 있도록 ‘숨’을 활용해보세요.</p>
+                    <button onclick="location.replace('./about1.html');">소    개</button>
+                </div>
             </div>
             <div class="swiper-slide">
                 <br><br><br><h1>Main slide 03</h1>
