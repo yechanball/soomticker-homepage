@@ -1,0 +1,369 @@
+html,
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.swiper-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide-01{
+    background-color: #E1E3E5;
+}
+
+.slide-02 {
+    background-image: url("../src/img/about02.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* PC (해상도 1024px)*/
+@media all and (min-width:768px) { 
+    .slide-01 img{
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: calc((100vw/1920)*1412);
+        height: auto;
+    }
+
+    .slide-01 p {
+        position: absolute;
+        top: calc((100vw/1920)*400);
+        left: calc((100vw/1920)*1276);
+        font-family: 'Noto Sans KR Medium';
+        font-size: calc((100vw/1920)*43);
+        line-height: calc((100vw/1920)*70);
+        color: #4A4A4A;
+    }
+
+    .slide-02 h1 {
+        position: absolute;
+        top: calc((100vw/1920)*170);
+        left: calc((100vw/1920)*147);
+        font-family: 'Noto Sans KR Bold';
+        font-size: calc((100vw/1920)*50);
+        line-height: calc((100vw/1920)*70);
+        color: #FFFFFF;
+    }
+
+    .slide-02 p {
+        position: absolute;
+        top: calc((100vw/1920)*340);
+        left: calc((100vw/1920)*147);
+        font-family: 'Noto Sans KR Bold';
+        font-size: calc((100vw/1920)*25);
+        line-height: calc((100vw/1920)*42);
+        color: #FFFFFF;
+    }
+
+    .slide-02 button {
+        position: absolute;
+        bottom: calc((100vw/1920)*76);
+        right: calc((100vw/1920)*96);
+        width: calc((100vw/1920)*120);
+        padding: 0%;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+        cursor: pointer;
+    }
+    .slide-02 button > img { margin: 0%; width: 100%; }
+    .slide-02 button:hover { width: calc((100vw/1920)*125); }
+
+    .slide-03 h1 {
+        position: absolute;
+        top: calc((100vw/1920)*150);
+        left: calc((100vw/1920)*147);
+        font-family: 'Noto Sans KR Bold';
+        font-size: calc((100vw/1920)*50);
+        line-height: calc((100vw/1920)*70);
+        color: #4A4A4A;
+    }
+
+    .subcontent-01 .subcontent-01-p {
+        position: absolute;
+        top: calc((100vw/1920)*300);
+        left: calc((100vw/1920)*147);
+        font-family: 'Noto Sans KR Medium';
+        font-size: calc((100vw/1920)*35);
+        line-height: calc((100vw/1920)*70);
+        color: #4A4A4A;
+    }
+
+    .subcontent-01 img {
+        position: absolute;
+        top: calc((100vw/1920)*430);
+        left: calc((100vw/1920)*189);
+        width: calc((100vw/1920)*148);
+        border-radius: calc((100vw/1920)*20);
+        box-shadow: calc((100vw/1920)*2) calc((100vw/1920)*2)
+                    calc((100vw/1920)*5) calc((100vw/1920)*5) rgba(0, 0, 0, 0.16);
+    }
+
+    .subcontent-01 p {
+        position: absolute;
+        top: calc((100vw/1920)*430);
+        left: calc((100vw/1920)*445);
+        font-family: 'Noto Sans KR Medium';
+        font-size: calc((100vw/1920)*20);
+        line-height: calc((100vw/1920)*35);
+        color: #646464;
+    }
+
+    .subcontent-02 img {
+        width: calc((100vw/1920)*204);
+    }
+
+    .subcontent-02-img-01 {
+        position: absolute;
+        top: calc((100vw/1920)*400);
+        left: calc((100vw/1920)*1054);
+    }
+
+    .subcontent-02-img-02 {
+        position: absolute;
+        top: calc((100vw/1920)*400);
+        left: calc((100vw/1920)*1329);
+    }
+
+    .subcontent-02-img-03 {
+        position: absolute;
+        top: calc((100vw/1920)*400);
+        left: calc((100vw/1920)*1606);
+    }
+
+    .subcontent-03 .subcontent-03-p {
+        position: absolute;
+        top: calc((100vw/1920)*600);
+        left: calc((100vw/1920)*147);
+        font-family: 'Noto Sans KR Medium';
+        font-size: calc((100vw/1920)*35);
+        line-height: calc((100vw/1920)*70);
+        color: #4A4A4A;
+    }
+
+    .subcontent-03 img {
+        position: absolute;
+        top: calc((100vw/1920)*730);
+        left: calc((100vw/1920)*189);
+        width: calc((100vw/1920)*148);
+        border-radius: calc((100vw/1920)*20);
+        box-shadow: calc((100vw/1920)*2) calc((100vw/1920)*2)
+                    calc((100vw/1920)*5) calc((100vw/1920)*5) rgba(0, 0, 0, 0.16);
+    }
+
+    .subcontent-03 p {
+        position: absolute;
+        top: calc((100vw/1920)*730);
+        left: calc((100vw/1920)*445);
+        font-family: 'Noto Sans KR Medium';
+        font-size: calc((100vw/1920)*20);
+        line-height: calc((100vw/1920)*35);
+        color: #646464;
+    }
+
+    .subcontent-04 img {
+        width: calc((100vw/1920)*204);
+    }
+
+    .subcontent-04-img-01 {
+        position: absolute;
+        top: calc((100vw/1920)*700);
+        left: calc((100vw/1920)*1054);
+    }
+
+    .subcontent-04-img-02 {
+        position: absolute;
+        top: calc((100vw/1920)*700);
+        left: calc((100vw/1920)*1329);
+    }
+
+    .subcontent-04-img-03 {
+        position: absolute;
+        top: calc((100vw/1920)*700);
+        left: calc((100vw/1920)*1606);
+    }
+}
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
+/*@media all and (min-width:768px) and (max-width:1023px) { 
+    style input
+}*/
+
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+@media all and (max-width:767px) {
+    .swiper-container {
+        max-width: 400px;
+    }
+
+    .slide-01 img{
+        position: absolute;
+        bottom: 0px;
+        left: -50px;
+        width: 600px;
+        height: auto;
+    }
+
+    .slide-01 p {
+        position: absolute;
+        top: calc((100vh/812)*126);
+        left: 50px;
+        font-family: 'Noto Sans KR Medium';
+        font-size: 20px;
+        line-height: 40px;
+        color: #4A4A4A;
+    }
+
+    .slide-02 h1 {
+        position: absolute;
+        top: calc((100vh/812)*72);
+        left: 25px;
+        font-family: 'Noto Sans KR Bold';
+        font-size: 30px;
+        line-height: 70px;
+        color: #FFFFFF;
+    }
+
+    .slide-02 p {
+        position: absolute;
+        top: calc((100vh/812)*190);
+        left: 25px;
+        width: 325px;
+        font-family: 'Noto Sans KR Bold';
+        font-size: 14px;
+        line-height: 34px;
+        color: #FFFFFF;
+    }
+
+    .slide-02 button {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        width: 70px;
+        padding: 0%;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .slide-02 button > img { margin: 0%; width: 100%; }
+   
+    .slide-03 h1 {
+        position: absolute;
+        top: calc((100vh/812)*72);
+        left: 25px;
+        font-family: 'Noto Sans KR Bold';
+        font-size: 25px;
+        line-height: 50px;
+        color: #4A4A4A;
+    }
+
+    .subcontent-01 .subcontent-01-p {
+        position: absolute;
+        top: calc((100vh/812)*152);
+        left: 25px;
+        font-family: 'Noto Sans KR Medium';
+        font-size: 20px;
+        line-height: 35px;
+        color: #4A4A4A;
+    }
+
+    .subcontent-01 img {
+        position: absolute;
+        top: calc((100vh/812)*228);
+        left: 30px;
+        width: 60px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.16);
+    }
+
+    .subcontent-01 p {
+        position: absolute;
+        top: calc((100vh/812)*206);
+        left: 100px;
+        font-family: 'Noto Sans KR Medium';
+        font-size: 11px;
+        line-height: 26px;
+        color: #646464;
+    }
+
+    .subcontent-02 img {
+        width: 90px;
+    }
+
+    .subcontent-02-img-01 {
+        position: absolute;
+        top: calc((100vh/812)*330);
+        left: 25px;
+    }
+
+    .subcontent-02-img-02 {
+        position: absolute;
+        top: calc((100vh/812)*330);
+        left: 140px;
+    }
+
+    .subcontent-02-img-03 {
+        position: absolute;
+        top: calc((100vh/812)*330);
+        left: 255px;
+    }
+
+    .subcontent-03 .subcontent-03-p {
+        position: absolute;
+        top: calc((100vh/812)*457);
+        left: 25px;
+        font-family: 'Noto Sans KR Medium';
+        font-size: 20px;
+        line-height: 35px;
+        color: #4A4A4A;
+    }
+
+    .subcontent-03 img {
+        position: absolute;
+        top: calc((100vh/812)*533);
+        left: 30px;
+        width: 60px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.16);
+    }
+
+    .subcontent-03 p {
+        position: absolute;
+        top: calc((100vh/812)*510);
+        left: 100px;
+        font-family: 'Noto Sans KR Medium';
+        font-size: 11px;
+        line-height: 26px;
+        color: #646464;
+    }
+
+    .subcontent-04 img {
+        width: 90px;
+    }
+
+    .subcontent-04-img-01 {
+        position: absolute;
+        top: calc((100vh/812)*634);
+        left: 25px;
+    }
+
+    .subcontent-04-img-02 {
+        position: absolute;
+        top: calc((100vh/812)*634);
+        left: 140px;
+    }
+
+    .subcontent-04-img-03 {
+        position: absolute;
+        top: calc((100vh/812)*634);
+        left: 255px;
+    }
+}
