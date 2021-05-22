@@ -64,6 +64,14 @@ nav { width: 100%; }
     color: #4B4B4B;
 }
 
+.menu ul li a.current {
+    color: #E1AA4F;
+}
+
+.menu ul li a.current:hover {
+    color: #E1AA4F;
+}
+
 .menu ul li > a { padding: 15px; }
 
 .menu ul ul {
@@ -105,15 +113,15 @@ nav { width: 100%; }
 
     .main-logo {
         position: absolute;
-        height: calc((100vw/1920)*50);
-        top: calc((100vw/1920)*15);
+        width: calc((100vw/1920)*180);
+        top: 10px;
         left: calc((100vw/1920)*65);
         padding: 0%;
         border: none;
         background-color: rgba(255, 255, 255, 0);
         cursor: pointer;
     }
-    .main-logo img { margin: 0%; height: 100%;}
+    .main-logo img { margin: 0%; width: 100%;}
 }
 
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
