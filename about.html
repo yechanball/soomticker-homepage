@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="./font/NotoSansKR.css" type="text/css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/about.css">
+</head>
+<body>
+    <!--menu-->
+    <div class="nav_wrapper">
+        <button class="main-logo" onclick="location.replace('./index.html');"><img src="./src/img/main_logo.png" alt="main logo"></button>
+        <!--<a class="menu-link" href="#menu"></a>-->
+        <div class="spinner-master">
+            <input type="checkbox" id="spinner-form" />
+            <label for="spinner-form" class="spinner-spin">
+                <div class="spinner diagonal part-1"></div>
+                <div class="spinner horizontal"></div>
+                <div class="spinner diagonal part-2"></div>
+            </label>
+        </div>
+        <nav id="menu" class="menu">
+            <ul class="dropdown">
+                <li><a class="current" href="#Link" title="Link">About</a>
+                    <ul>
+                        <li><a class="sub-1 current" href="#Link" onclick="moveto_0();" title="소개">소개</a></li>
+                        <li><a class="sub-2" href="#Link" onclick="moveto_1();" title="스토리">스토리</a></li>
+                    </ul>
+                </li>
+                <li><a href="#Link" title="Link">Guide</a>
+                    <ul>
+                        <li><a href="#Link" title="Link">사용방법</a></li>
+                        <li><a href="#Link" title="Link">FAQ</a></li>
+                    </ul>
+                </li>
+                <li><a href="#Link" title="Link">Product</a>
+                    <ul>
+                        <li><a href="#Link" title="Link">구매</a></li>
+                    </ul>
+                </li>
+                <li><a href="#Link" title="Link">Contact</a>
+                    <ul>
+                        <li><a href="#Link" title="Link">문의처</a></li>
+                        <li><a href="#Link" title="Link">교환 및 환분</a></li>
+                        <li><a href="#Link" title="Link">이용약관</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--swiper content-->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide-01">
+                <img src="./src/img/about01.png" alt="□">
+                <p>‘숨’은 NFC칩이 내장된 
+                    <br>스티커에 소리를 저장할 수 있는 
+                    <br>웹 기반 서비스 입니다</p>
+            </div>
+            <div class="swiper-slide slide-02">
+                <h1>Brand Story</h1>
+                <p>소리는 눈을 감고 이야기를 떠올리게 하는 힘이 있습니다. 비 오는 날 교실의 어수선한 소리를 떠올리면, 
+                    <br>잊고 살았던 같은 반 친구의 얼굴이 떠오르는 것처럼요. ‘숨’은 소리를 통해 이야기를 담습니다.  
+                    <br>어느 물건이든 이야기가 담기면 특별해집니다.
+                    <br>여러분의 제품에 고객님의 이야기가 담길 수 있도록 ‘숨’을 활용해보세요.
+                    <br>제품이 여러분의 손을 떠나 고객님에게 갔을 때, 더 없이 특별한 물건으로 사랑받을 수 있게 될 거에요.</p>
+                <button><img src="./src/img/playbutton.png" alt="□"></button>
+            </div>
+            <div class="swiper-slide slide-03">
+                <h1>Logo Design & Naming</h1>
+                <div class="subcontent-01">
+                    <p class="subcontent-01-p">Logo</p>
+                    <img src="./src/img/about03_logo1.png" alt="□">
+                    <p>말풍선을 모티프로 로고를 디자인했습니다. 
+                        <br>빈 말풍선에 서로 다른 이야기들이 모여 새로운 의미로 
+                        <br>피어나기 바라는 ‘숨’의 가치가 담겨 있습니다.</p>
+                </div>
+                <div class="subcontent-02">
+                    <img class="subcontent-02-img-01" src="./src/img/about03_logo2.png" alt="□">
+                    <img class="subcontent-02-img-02" src="./src/img/about03_logo3.png" alt="□">
+                    <img class="subcontent-02-img-03" src="./src/img/about03_logo4.png" alt="□">
+                </div>
+                <div class="subcontent-03">
+                    <p class="subcontent-03-p">Naming</p>
+                    <img src="./src/img/about03_naming1.png" alt="□">
+                    <p>영문 폰트 Fredoka One을 로고 서체에 활용해 
+                        <br>‘숨’이 추구하고자 하는 기억에 대한 가치를 드러내고자 했습니다.</p>
+                </div>
+                <div class="subcontent-04">
+                    <img class="subcontent-04-img-01" src="./src/img/about03_naming2.png" alt="□">
+                    <img class="subcontent-04-img-02" src="./src/img/about03_naming3.png" alt="□">
+                    <img class="subcontent-04-img-03" src="./src/img/about03_naming4.png" alt="□">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            direction: 'vertical',
+            loop: false,
+            allowTouchMove: true,
+
+            mousewheel: {
+                invert: false,
+            },
+        });
+
+        swiper.on('slideChange', function(){
+            if(swiper.activeIndex == 0){
+                ($('.sub-1')).addClass('current');
+                ($('.sub-2')).removeClass('current');
+            }
+            else{
+                ($('.sub-1')).removeClass('current');
+                ($('.sub-2')).addClass('current');
+            }
+        });
+
+        function moveto_0(){
+            swiper.slideTo(0);
+        }
+
+        function moveto_1(){
+            swiper.slideTo(1);
+        }
+    </script>
+</body>
+</html>
