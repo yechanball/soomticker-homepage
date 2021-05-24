@@ -169,7 +169,7 @@ body {
 
     .sub-menu {
         position: absolute;
-        top: calc((100vw/375)*60);
+        top: calc((100vw/375)*120);
         left: calc((100vw/375)*25);
         width: calc((100vw/375)*350);
         height: calc((100vw/375)*60);
@@ -249,10 +249,10 @@ body {
 
     #subcontent01 {
         position: absolute;
-        top: calc((100vw/375)*125);
+        top: calc((100vw/375)*185);
         left: calc((100vw/375)*25);
         width: calc((100vw/375)*325);
-        height: calc((100vh/812)*660);
+        height: calc((100vh/812)*600);
         border: 1px solid #484848;
         border-radius: calc((100vw/375)*10);
         background-color: #FBFBFB;
@@ -261,10 +261,10 @@ body {
     }
     #subcontent02 {
         position: absolute;
-        top: calc((100vw/375)*125);
+        top: calc((100vw/375)*185);
         left: calc((100vw/375)*25);
         width: calc((100vw/375)*325);
-        height: calc((100vh/812)*660);
+        height: calc((100vh/812)*600);
         border: 1px solid #484848;
         border-radius: calc((100vw/375)*10);
         background-color: #FBFBFB;
@@ -273,10 +273,10 @@ body {
     }
     #subcontent03 {
         position: absolute;
-        top: calc((100vw/375)*125);
+        top: calc((100vw/375)*185);
         left: calc((100vw/375)*25);
         width: calc((100vw/375)*325);
-        height: calc((100vh/812)*660);
+        height: calc((100vh/812)*600);
         border: 1px solid #484848;
         border-radius: calc((100vw/375)*10);
         background-color: #FBFBFB;
@@ -285,10 +285,10 @@ body {
     }
     #subcontent04 {
         position: absolute;
-        top: calc((100vw/375)*125);
+        top: calc((100vw/375)*185);
         left: calc((100vw/375)*25);
         width: calc((100vw/375)*325);
-        height: calc((100vh/812)*660);
+        height: calc((100vh/812)*600);
         border: 1px solid #484848;
         border-radius: calc((100vw/375)*10);
         background-color: #FBFBFB;
