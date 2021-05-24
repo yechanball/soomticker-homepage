@@ -1,0 +1,298 @@
+html,
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#subcontent01 { visibility: visible; }
+#subcontent02 { visibility: hidden; }
+#subcontent03 { visibility: hidden; }
+#subcontent04 { visibility: hidden; }
+
+/* PC (해상도 1024px)*/
+@media all and (min-width:768px) {
+    body {
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    .sub-menu {
+        position: absolute;
+        top: calc((100vw/1920)*160);
+        left: calc((100vw/1920)*100);
+        width: calc((100vw/1920)*1920);
+        height: calc((100vw/1920)*170);
+    }
+
+    .sub-menu button {
+        margin-left: calc((100vw/1920)*100);
+        margin-right: calc((100vw/1920)*100);
+        cursor: pointer;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .sub-menu button > .current > p,
+    .sub-menu button:hover > .current > p{ color: #5A5A5A; }
+    .sub-menu button:hover > div >  p { color:#E1AA4F }
+
+    .sub-menu > button > div {
+        width: calc((100vw/1920)*200);
+        text-align: center;
+    }
+
+    .sub-menu > button > div > p {
+        font-family: 'Noto Sans KR Medium';
+        font-size: calc((100vw/1920)*50);
+        line-height: calc((100vw/1920)*80);
+        color: #C6C6C6;
+        margin: 0;
+    }
+    
+    .sub-menu > button > div > div {
+        margin-left: calc((100vw/1920)*71.5);
+        width: calc((100vw/1920)*57);
+        height: calc((100vw/1920)*56);
+        background-image: url("../src/img/guide_menu_gray.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    
+    .sub-menu > button > div > div > p {
+        font-family: 'Noto Sans KR Medium';
+        font-size: calc((100vw/1920)*27);
+        line-height: calc((100vw/1920)*54);
+        color: #FFFFFF;
+        margin: 0;
+    }
+
+    .sub-menu button > .selected-sub-menu > p { color: #E1AA4F; }
+    .sub-menu button:hover > div > p { color: #E1AA4F; }
+    .sub-menu button > .selected-sub-menu > div { background-image: url("../src/img/guide_menu_color.png"); }
+    .sub-menu button:hover > div > div { background-image: url("../src/img/guide_menu_color.png"); }
+
+    .title-word {
+        font-family: 'Noto Sans KR Medium';
+        font-size: calc((100vw/1920)*70);
+        line-height: calc((100vw/1920)*80);
+        color: #5D5D5D;
+    }
+
+    .main-img {
+        width: calc((100vw/1920)*800);
+    }
+
+    .main-word {
+        font-family: 'Noto Sans KR Medium';
+        font-size: calc((100vw/1920)*50);
+        line-height: calc((100vw/1920)*80);
+        color: #5D5D5D;
+    }
+
+    .sub-word {
+        font-family: 'Noto Sans KR Medium';
+        font-size: calc((100vw/1920)*34);
+        line-height: calc((100vw/1920)*60);
+        color: #7C7C7C;
+    }
+
+    #subcontent01 {
+        position: absolute;
+        top: calc((100vw/1920)*370);
+        left: calc((100vw/1920)*150);
+        width: calc((100vw/1920)*1620);
+        height: auto;
+        border: 1px solid #484848;
+        border-radius: calc((100vw/1920)*40);
+        background-color: #FBFBFB;
+        text-align: center;
+    }
+    #subcontent02 {
+        position: absolute;
+        top: calc((100vw/1920)*370);
+        left: calc((100vw/1920)*150);
+        width: calc((100vw/1920)*1620);
+        height: auto;
+        border: 1px solid #484848;
+        border-radius: calc((100vw/1920)*40);
+        background-color: #FBFBFB;
+        text-align: center;
+    }
+    #subcontent03 {
+        position: absolute;
+        top: calc((100vw/1920)*370);
+        left: calc((100vw/1920)*150);
+        width: calc((100vw/1920)*1620);
+        height: auto;
+        border: 1px solid #484848;
+        border-radius: calc((100vw/1920)*40);
+        background-color: #FBFBFB;
+        text-align: center;
+    }
+    #subcontent04 {
+        position: absolute;
+        top: calc((100vw/1920)*370);
+        left: calc((100vw/1920)*150);
+        width: calc((100vw/1920)*1620);
+        height: auto;
+        border: 1px solid #484848;
+        border-radius: calc((100vw/1920)*40);
+        background-color: #FBFBFB;
+        text-align: center;
+    }
+}
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
+/*@media all and (min-width:768px) and (max-width:1023px) { 
+    style input
+}*/
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+@media all and (max-width:767px) {
+    body {
+        overflow: hidden;
+    }
+
+    .content {
+        max-width: 400px;
+        height: 100vh;
+    }
+
+    .sub-menu {
+        position: absolute;
+        top: calc((100vw/375)*60);
+        left: calc((100vw/375)*25);
+        width: calc((100vw/375)*350);
+        height: calc((100vw/375)*60);
+    }
+
+    .sub-menu button {
+        margin-left: calc((100vw/375)*3);
+        margin-right: calc((100vw/375)*3);
+        cursor: pointer;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .sub-menu button > .current > p,
+    .sub-menu button:hover > .current > p{ color: #5A5A5A; }
+    .sub-menu button:hover > div >  p { color:#E1AA4F }
+
+    .sub-menu > button > div {
+        width: calc((100vw/375)*60);
+        text-align: center;
+    }
+
+    .sub-menu > button > div > p {
+        font-family: 'Noto Sans KR Medium';
+        font-size: calc((100vw/375)*12);
+        line-height: calc((100vw/375)*15);
+        color: #C6C6C6;
+        margin: 0;
+    }
+    
+    .sub-menu > button > div > div {
+        margin-left: calc((100vw/375)*15);
+        width: calc((100vw/375)*30);
+        height: calc((100vw/375)*30);
+        background-image: url("../src/img/guide_menu_gray.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    
+    .sub-menu > button > div > div > p {
+        font-family: 'Noto Sans KR Medium';
+        font-size: calc((100vw/375)*10);
+        line-height: calc((100vw/375)*30);
+        color: #FFFFFF;
+        margin: 0;
+    }
+
+    .sub-menu button > .selected-sub-menu > p { color: #E1AA4F; }
+    .sub-menu button:hover > div > p { color: #E1AA4F; }
+    .sub-menu button > .selected-sub-menu > div { background-image: url("../src/img/guide_menu_color.png"); }
+    .sub-menu button:hover > div > div { background-image: url("../src/img/guide_menu_color.png"); }
+
+    .title-word {
+        font-family: 'Noto Sans KR Medium';
+        font-size: calc((100vw/375)*20);
+        line-height: calc((100vw/375)*40);
+        color: #5D5D5D;
+    }
+
+    .main-img {
+        width: calc((100vw/375)*325);
+    }
+
+    .main-word {
+        font-family: 'Noto Sans KR Medium';
+        font-size: calc((100vw/375)*16);
+        line-height: calc((100vw/375)*32);
+        color: #5D5D5D;
+    }
+
+    .sub-word {
+        font-family: 'Noto Sans KR Medium';
+        font-size: calc((100vw/375)*12);
+        line-height: calc((100vw/375)*20);
+        color: #7C7C7C;
+    }
+
+    #subcontent01 {
+        position: absolute;
+        top: calc((100vw/375)*125);
+        left: calc((100vw/375)*25);
+        width: calc((100vw/375)*325);
+        height: calc((100vh/812)*660);
+        border: 1px solid #484848;
+        border-radius: calc((100vw/375)*10);
+        background-color: #FBFBFB;
+        text-align: center;
+        overflow-y: scroll;
+    }
+    #subcontent02 {
+        position: absolute;
+        top: calc((100vw/375)*125);
+        left: calc((100vw/375)*25);
+        width: calc((100vw/375)*325);
+        height: calc((100vh/812)*660);
+        border: 1px solid #484848;
+        border-radius: calc((100vw/375)*10);
+        background-color: #FBFBFB;
+        text-align: center;
+        overflow-y: scroll;
+    }
+    #subcontent03 {
+        position: absolute;
+        top: calc((100vw/375)*125);
+        left: calc((100vw/375)*25);
+        width: calc((100vw/375)*325);
+        height: calc((100vh/812)*660);
+        border: 1px solid #484848;
+        border-radius: calc((100vw/375)*10);
+        background-color: #FBFBFB;
+        text-align: center;
+        overflow-y: scroll;
+    }
+    #subcontent04 {
+        position: absolute;
+        top: calc((100vw/375)*125);
+        left: calc((100vw/375)*25);
+        width: calc((100vw/375)*325);
+        height: calc((100vh/812)*660);
+        border: 1px solid #484848;
+        border-radius: calc((100vw/375)*10);
+        background-color: #FBFBFB;
+        text-align: center;
+        overflow-y: scroll;
+    }
+}
