@@ -205,7 +205,13 @@ body {
         overflow-x: hidden;
         object-fit: cover;
     }
-
+    
+    .main-slide-2-inner {
+        position: relative;
+        width: 100%;
+        height: 100%; 
+    }
+    
     .main-slide-2 img {
         position: absolute;
         top: calc((100vw/375)*80);
@@ -254,4 +260,82 @@ body {
         border-radius: 40px;
         cursor: pointer;
     }
+    
+    .main-slide-3-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .main-slide-3-inner h1 {
+        font-family: 'Noto Sans KR Black';
+        font-size: 44px;
+        color: #505050;
+    }
+
+    .main-slide-3-inner > div {
+        position: absolute;
+        top: 100px;
+        width: 1130px;
+        height: 600px;
+    }
+
+    .main-slide-3-inner > div > div{
+        position: absolute;
+        top: 0;
+        width: 330px;
+        height: 600px;
+        margin: 0;
+    }
+    .main-slide-3-inner-1 { left: 0px; }
+    .main-slide-3-inner-2 { left: 400px; }
+    .main-slide-3-inner-3 { left: 800px; }
+
+    .inner-img {
+        width: 330px;
+        height: 330px;
+        background-image: url("../src/img/guide_menu_color.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .inner-img > p {
+        padding-top: 130px;
+        font-family: 'Noto Sans KR Bold';
+        font-size: 35px;
+        line-height: 70px;
+        color: #FFFFFF;
+    }
+
+    .inner-p {
+        font-family: 'Noto Sans KR Light';
+        font-size: 20px;
+        line-height: 42px;
+        color: #707070;
+        margin: 0;
+    }
+
+    .inner-btn {
+        font-family: 'Noto Sans KR Medium';
+        font-size: 22px;
+        color: #727272;
+        background-color: #FFFFFF;
+        text-align: center;
+        width: 200px;
+        height: 50px;
+        margin-top: 30px;
+        border: 1px solid #808080;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+
+    .main-slide-3-inner > div > img{
+        position: absolute;
+        top: 160px;
+        width: 80px;
+        height: 90px;
+    }
+    .main-slide-3-inner-img-1 { left: 325px; }
+    .main-slide-3-inner-img-2 { left: 725px; }
 }
