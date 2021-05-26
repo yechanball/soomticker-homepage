@@ -18,66 +18,175 @@ body {
 .swiper-slide {
     justify-content: center;
     text-align: center;
-    background-color: #FAFAFA;
 }
 
 .main-slide-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #000000f1;
 }
 
+.main-slide-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAFAFA;
+}
+
+.main-slide-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* PC (해상도 1024px)*/
-@media all and (min-width:768px) { 
+@media all and (min-width:768px) {
     #main_video {
-        width: 100%; 
-        height: 100%; 
+        position: relative;
+        width: 1920px;
+        height: 1080px; 
+        overflow-x: hidden;
+        object-fit: cover;
+    }
+
+    .main-slide-2-inner {
+        position: relative;
+        width: 1130px;
+        height: 640px; 
         overflow: hidden;
     }
 
     .main-slide-2 img {
         position: absolute;
-        top: calc((100vw/1920)*160);
-        left: calc((100vw/1920)*120);
-        width: calc((100vw/1920)*900);
+        top: 15px;
+        left: 10px;
+        width: 695px;
         height: auto;
     }
 
-    .main-slide-2 div {
+    .main-slide-2 > div > div {
         position: absolute;
-        top: calc((100vw/1920)*260);
-        left: calc((100vw/1920)*1180);
-        width: calc((100vw/1920)*490);
+        top: 100px;
+        left: 700px;
+        width: 430px;
         height: auto;
         text-align: center;
     }
 
     .main-slide-2 h1 {
-        font-family: 'Noto Sans KR Light';
-        font-size: calc((100vw/1920)*66);
+        font-family: 'Noto Sans KR Black';
+        font-size: 44px;
         color: #505050;
     }
 
     .main-slide-2 p {
         font-family: 'Noto Sans KR Light';
-        font-size: calc((100vw/1920)*25);
-        line-height: calc((100vw/1920)*42);
+        font-size: 24px;
+        line-height: 42px;
         color: #646464;
-        margin-top: calc((100vw/1920)*130);
+        margin-top: 80px;
     }
 
     .main-slide-2 button {
         font-family: 'Noto Sans KR Medium';
-        font-size: calc((100vw/1920)*30);
+        font-size: 30px;
         color: #727272;
         background-color: #FFFFFF;
         text-align: center;
-        width: calc((100vw/1920)*360);
-        height: calc((100vw/1920)*85);
-        margin-top: calc((100vw/1920)*50);
+        width: 200px;
+        height: 70px;
+        margin-top: 30px;
         border: 1px solid #808080;
-        border-radius: 40px;
+        border-radius: 30px;
         cursor: pointer;
     }
-    .main-slide-2 button:hover { background-color: #E1AA4F; }
+    .main-slide-2 button:hover { 
+        color: #E1AA4F; 
+        width: 202px;
+        height: 72px;
+        margin-top: 29px;
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.16);
+    }
+
+    .main-slide-3-inner {
+        position: relative;
+        width: 1130px;
+        height: 640px; 
+        overflow: hidden;
+    }
+
+    .main-slide-3-inner h1 {
+        font-family: 'Noto Sans KR Black';
+        font-size: 44px;
+        color: #505050;
+    }
+
+    .main-slide-3-inner > div {
+        position: absolute;
+        top: 100px;
+        width: 1130px;
+        height: 600px;
+    }
+
+    .main-slide-3-inner > div > div{
+        position: absolute;
+        top: 0;
+        width: 330px;
+        height: 600px;
+        margin: 0;
+    }
+    .main-slide-3-inner-1 { left: 0px; }
+    .main-slide-3-inner-2 { left: 400px; }
+    .main-slide-3-inner-3 { left: 800px; }
+
+    .inner-img {
+        width: 330px;
+        height: 330px;
+        background-image: url("../src/img/guide_menu_color.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .inner-img > p {
+        padding-top: 130px;
+        font-family: 'Noto Sans KR Bold';
+        font-size: 35px;
+        line-height: 70px;
+        color: #FFFFFF;
+    }
+
+    .inner-p {
+        font-family: 'Noto Sans KR Light';
+        font-size: 20px;
+        line-height: 42px;
+        color: #707070;
+        margin: 0;
+    }
+
+    .inner-btn {
+        font-family: 'Noto Sans KR Medium';
+        font-size: 22px;
+        color: #727272;
+        background-color: #FFFFFF;
+        text-align: center;
+        width: 200px;
+        height: 50px;
+        margin-top: 30px;
+        border: 1px solid #808080;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+
+    .main-slide-3-inner > div > img{
+        position: absolute;
+        top: 160px;
+        width: 80px;
+        height: 90px;
+    }
+    .main-slide-3-inner-img-1 { left: 325px; }
+    .main-slide-3-inner-img-2 { left: 725px; }
 }
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
 /*@media all and (min-width:768px) and (max-width:1023px) { 
@@ -86,15 +195,15 @@ body {
 /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
 @media all and (max-width:767px) {
     .swiper-container {
-        max-width: 400px;
+        max-width: 414px;
     }
 
-    #main_video { 
-        position: absolute;
-        width: 767px;
-        left: calc((100vw - 767px)/2);
-        height: 100vh;
-        overflow: hidden;
+    #main_video {
+        position: relative;
+        width: 1443px;
+        height: 812px; 
+        overflow-x: hidden;
+        object-fit: cover;
     }
 
     .main-slide-2 img {

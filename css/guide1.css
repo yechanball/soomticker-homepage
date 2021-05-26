@@ -169,7 +169,7 @@ body {
 
     .sub-menu {
         position: absolute;
-        top: calc((100vw/375)*120);
+        top: calc((100vw/375)*60);
         left: calc((100vw/375)*25);
         width: calc((100vw/375)*350);
         height: calc((100vw/375)*60);
@@ -249,11 +249,11 @@ body {
 
     #subcontent01 {
         position: absolute;
-        top: calc((100vw/375)*185);
+        top: calc((100vw/375)*125);
         left: calc((100vw/375)*25);
         width: calc((100vw/375)*325);
-        height: calc((100vh/812)*600);
-        border: 1px solid #484848;
+        height: calc((100vh/812)*660);
+        border: 0.5px solid #484848;
         border-radius: calc((100vw/375)*10);
         background-color: #FBFBFB;
         text-align: center;
@@ -261,11 +261,11 @@ body {
     }
     #subcontent02 {
         position: absolute;
-        top: calc((100vw/375)*185);
+        top: calc((100vw/375)*125);
         left: calc((100vw/375)*25);
         width: calc((100vw/375)*325);
-        height: calc((100vh/812)*600);
-        border: 1px solid #484848;
+        height: calc((100vh/812)*660);
+        border: 0.5px solid #484848;
         border-radius: calc((100vw/375)*10);
         background-color: #FBFBFB;
         text-align: center;
@@ -273,11 +273,11 @@ body {
     }
     #subcontent03 {
         position: absolute;
-        top: calc((100vw/375)*185);
+        top: calc((100vw/375)*125);
         left: calc((100vw/375)*25);
         width: calc((100vw/375)*325);
-        height: calc((100vh/812)*600);
-        border: 1px solid #484848;
+        height: calc((100vh/812)*660);
+        border: 0.5px solid #484848;
         border-radius: calc((100vw/375)*10);
         background-color: #FBFBFB;
         text-align: center;
@@ -285,11 +285,11 @@ body {
     }
     #subcontent04 {
         position: absolute;
-        top: calc((100vw/375)*185);
+        top: calc((100vw/375)*125);
         left: calc((100vw/375)*25);
         width: calc((100vw/375)*325);
-        height: calc((100vh/812)*600);
-        border: 1px solid #484848;
+        height: calc((100vh/812)*660);
+        border: 0.5px solid #484848;
         border-radius: calc((100vw/375)*10);
         background-color: #FBFBFB;
         text-align: center;
