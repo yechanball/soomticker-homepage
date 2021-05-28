@@ -208,11 +208,11 @@ body {
     
     .main-slide-2-inner {
         position: relative;
-        width: 100%;
-        height: 100%; 
+        width: 100vw;
+        height: 100vh; 
     }
     
-    .main-slide-2 img {
+    .main-slide-2-inner img {
         position: absolute;
         top: calc((100vw/375)*80);
         left: calc((100vw/375)*25);
@@ -221,7 +221,7 @@ body {
         height: auto;
     }
 
-    .main-slide-2 div {
+    .main-slide-2-inner div {
         position: absolute;
         bottom: calc((100vw/375)*30);
         left: calc((100vw/375)*37.5);
@@ -231,13 +231,13 @@ body {
         text-align: center;
     }
 
-    .main-slide-2 h1 {
+    .main-slide-2-inner h1 {
         font-family: 'Noto Sans KR Light';
         font-size: 28px;
         color: #505050;
     }
 
-    .main-slide-2 p {
+    .main-slide-2-inner p {
         font-family: 'Noto Sans KR Light';
         font-size: 17px;
         line-height: 34px;
@@ -245,7 +245,7 @@ body {
         margin-top: calc((100vw/375)*30);
     }
 
-    .main-slide-2 button {
+    .main-slide-2-inner button {
         font-family: 'Noto Sans KR Medium';
         font-size: 20px;
         color: #727272;
@@ -268,32 +268,33 @@ body {
     }
 
     .main-slide-3-inner h1 {
+        margin-top: 18%;
         font-family: 'Noto Sans KR Black';
-        font-size: 44px;
+        font-size: 24px;
         color: #505050;
     }
 
     .main-slide-3-inner > div {
         position: absolute;
-        top: 100px;
-        width: 1130px;
-        height: 600px;
+        top: 20%;
+        width: 100%;
+        height: 80%;
     }
 
     .main-slide-3-inner > div > div{
-        position: absolute;
-        top: 0;
-        width: 330px;
-        height: 600px;
+        position: relative;
+        left: 0;
+        width: 100%;
+        height: auto;
         margin: 0;
     }
-    .main-slide-3-inner-1 { left: 0px; }
-    .main-slide-3-inner-2 { left: 400px; }
-    .main-slide-3-inner-3 { left: 800px; }
 
     .inner-img {
-        width: 330px;
-        height: 330px;
+        position: absolute;
+        margin-top: 1%;
+        left: 5%;
+        width: 120px;
+        height: 120px;
         background-image: url("../src/img/guide_menu_color.png");
         background-size: contain;
         background-repeat: no-repeat;
@@ -301,41 +302,43 @@ body {
     }
 
     .inner-img > p {
-        padding-top: 130px;
+        padding-top: 15px;
         font-family: 'Noto Sans KR Bold';
-        font-size: 35px;
-        line-height: 70px;
+        font-size: 20px;
+        line-height: 50px;
         color: #FFFFFF;
     }
 
     .inner-p {
+        padding-top: 2%;
+        padding-left: 35%;
         font-family: 'Noto Sans KR Light';
-        font-size: 20px;
-        line-height: 42px;
+        font-size: 13px;
+        line-height: 30px;
         color: #707070;
         margin: 0;
     }
 
     .inner-btn {
         font-family: 'Noto Sans KR Medium';
-        font-size: 22px;
+        font-size: 15px;
         color: #727272;
         background-color: #FFFFFF;
         text-align: center;
-        width: 200px;
-        height: 50px;
-        margin-top: 30px;
+        width: 100px;
+        height: 30px;
+        margin-top: 10px;
+        margin-left: 35%;
         border: 1px solid #808080;
-        border-radius: 30px;
+        border-radius: 20px;
         cursor: pointer;
     }
 
     .main-slide-3-inner > div > img{
-        position: absolute;
-        top: 160px;
-        width: 80px;
-        height: 90px;
+        height: 8%;
+        -ms-transform: rotate(90deg); 
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        margin: 5%;
     }
-    .main-slide-3-inner-img-1 { left: 325px; }
-    .main-slide-3-inner-img-2 { left: 725px; }
 }

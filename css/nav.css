@@ -46,7 +46,10 @@ nav { width: 100%; }
 
 .menu ul li { padding: 0px;}
 
-.menu > ul > li { display: inline-block; text-align: center;}
+.menu > ul > li { 
+    display: inline-block; 
+    text-align: center;
+}
 
 .menu ul li a {
     display: block;
@@ -90,7 +93,7 @@ nav { width: 100%; }
     padding: 15px;
     height: auto;
     font-family: 'Noto Sans KR Medium';
-    font-size: calc((100vw/1920)*27);
+    font-size: calc((100vw/1920)*25);
     color: #BEBEBE;
     background: #FFFFFF;
 }
