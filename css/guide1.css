@@ -172,7 +172,7 @@ body {
 
     .content-sub-menu {
         position: absolute;
-        top: 10vh;
+        top: 10%;
         left: 10%;
         width: 80%;
         height: calc((100vw/375)*60);
@@ -253,10 +253,10 @@ body {
 
     #subcontent01 {
         position: absolute;
-        top: 20vh;
+        top: 20%;
         left: 10%;
         width: 80%;
-        height: 75vh;
+        height: 75%;
         border: 0.5px solid #484848;
         border-radius: calc((100vw/375)*10);
         background-color: #FBFBFB;
@@ -265,10 +265,10 @@ body {
     }
     #subcontent02 {
         position: absolute;
-        top: 20vh;
+        top: 20%;
         left: 10%;
         width: 80%;
-        height: 75vh;
+        height: 75%;
         border: 0.5px solid #484848;
         border-radius: calc((100vw/375)*10);
         background-color: #FBFBFB;
@@ -277,10 +277,10 @@ body {
     }
     #subcontent03 {
         position: absolute;
-        top: 20vh;
+        top: 20%;
         left: 10%;
         width: 80%;
-        height: 75vh;
+        height: 75%;
         border: 0.5px solid #484848;
         border-radius: calc((100vw/375)*10);
         background-color: #FBFBFB;
@@ -289,10 +289,10 @@ body {
     }
     #subcontent04 {
         position: absolute;
-        top: 20vh;
+        top: 20%;
         left: 10%;
         width: 80%;
-        height: 75vh;
+        height: 75%;
         border: 0.5px solid #484848;
         border-radius: calc((100vw/375)*10);
         background-color: #FBFBFB;
