@@ -318,7 +318,7 @@ body {
 
     .subcontent-03 .subcontent-03-p {
         position: absolute;
-        top: calc((100vh/812)*457);
+        top: calc((100vh/812)*450);
         left: 25px;
         font-family: 'Noto Sans KR Medium';
         font-size: 20px;
@@ -328,7 +328,7 @@ body {
 
     .subcontent-03 img {
         position: absolute;
-        top: calc((100vh/812)*533);
+        top: calc((100vh/812)*526);
         left: 30px;
         width: 60px;
         border-radius: 5px;
@@ -337,7 +337,7 @@ body {
 
     .subcontent-03 p {
         position: absolute;
-        top: calc((100vh/812)*510);
+        top: calc((100vh/812)*503);
         left: 100px;
         font-family: 'Noto Sans KR Medium';
         font-size: 11px;
@@ -351,19 +351,19 @@ body {
 
     .subcontent-04-img-01 {
         position: absolute;
-        top: calc((100vh/812)*634);
+        top: calc((100vh/812)*627);
         left: 25px;
     }
 
     .subcontent-04-img-02 {
         position: absolute;
-        top: calc((100vh/812)*634);
+        top: calc((100vh/812)*627);
         left: 140px;
     }
 
     .subcontent-04-img-03 {
         position: absolute;
-        top: calc((100vh/812)*634);
+        top: calc((100vh/812)*627);
         left: 255px;
     }
 }
