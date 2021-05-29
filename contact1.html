@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문의처</title>
+    <link rel="stylesheet" href="./font/NotoSansKR.css" type="text/css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/contact1.css">
+</head>
+<body>
+    <!--menu-->
+    <div class="nav_wrapper">
+        <button class="main-logo" onclick="location.replace('./index.html');"><img src="./src/img/main_logo.png" alt="main logo"></button>
+        <!--<a class="menu-link" href="#menu"></a>-->
+        <div class="spinner-master">
+            <input type="checkbox" id="spinner-form" />
+            <label for="spinner-form" class="spinner-spin">
+                <div class="spinner diagonal part-1"></div>
+                <div class="spinner horizontal"></div>
+                <div class="spinner diagonal part-2"></div>
+            </label>
+        </div>
+        <nav id="menu" class="menu">
+            <ul class="dropdown">
+                <li><a href="#Link" title="About">About</a>
+                    <ul>
+                        <li><a href="./about.html" title="소개">소개</a></li>
+                        <li><a href="./about.html" title="스토리">스토리</a></li>
+                    </ul>
+                </li>
+                <li><a href="#Link" title="Guide">Guide</a>
+                    <ul>
+                        <li><a href="./guide1.html" title="사용방법">사용방법</a></li>
+                        <li><a href="./guide2.html" title="FAQ">FAQ</a></li>
+                    </ul>
+                </li>
+                <li><a href="#Link" title="Product">Product</a>
+                    <ul>
+                        <li><a href="#Link" title="구매">구매</a></li>
+                    </ul>
+                </li>
+                <li><a class="current" href="#Link" title="Contact">Contact</a>
+                    <ul>
+                        <li><a class="current" href="./contact1.html" title="문의처">문의처</a></li>
+                        <li><a href="#Link" title="교환 및 환불">교환 및 환불</a></li>
+                        <li><a href="#Link" title="이용약관">이용약관</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <h1>Contact</h1>
+        <p>🙂  신속하게 확인해서 정확하게 답변 드리겠습니다 🙂
+            <br>상담시간 : 월 ~ 토, 오전 10:00 ~ 오후 10:00</p>
+        <table>
+            <tr>
+                <td class="column-1">이메일&nbsp;</td>
+                <td class="column-2">&emsp;soomthememory@gmail.com</td>
+            </tr>
+            <tr>
+                <td class="column-1">카카오톡&nbsp;</td>
+                <td class="column-2">&emsp;soom0229</td>
+            </tr>
+        </table>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./js/nav.js"></script>
+</body>
+</html>
