@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구매</title>
+    <link rel="stylesheet" href="./font/NotoSansKR.css" type="text/css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/product.css">
+</head>
+<body>
+    <!--menu-->
+    <div class="nav_wrapper">
+        <button class="main-logo" onclick="location.replace('./index.html');"><img src="./src/img/main_logo.png" alt="main logo"></button>
+        <!--<a class="menu-link" href="#menu"></a>-->
+        <div class="spinner-master">
+            <input type="checkbox" id="spinner-form" />
+            <label for="spinner-form" class="spinner-spin">
+                <div class="spinner diagonal part-1"></div>
+                <div class="spinner horizontal"></div>
+                <div class="spinner diagonal part-2"></div>
+            </label>
+        </div>
+        <nav id="menu" class="menu">
+            <ul class="dropdown">
+                <li><a href="#Link" title="About">About</a>
+                    <ul>
+                        <li><a href="./about.html" title="소개">소개</a></li>
+                        <li><a href="./about.html" title="스토리">스토리</a></li>
+                    </ul>
+                </li>
+                <li><a href="#Link" title="Guide">Guide</a>
+                    <ul>
+                        <li><a href="./guide1.html" title="사용방법">사용방법</a></li>
+                        <li><a href="./guide2.html" title="FAQ">FAQ</a></li>
+                    </ul>
+                </li>
+                <li><a class="current" href="#Link" title="Product">Product</a>
+                    <ul>
+                        <li><a class="current" href="./product.html" title="구매">구매</a></li>
+                    </ul>
+                </li>
+                <li><a href="#Link" title="Contact">Contact</a>
+                    <ul>
+                        <li><a href="./contact1.html" title="문의처">문의처</a></li>
+                        <li><a href="#Link" title="교환 및 환불">교환 및 환불</a></li>
+                        <li><a href="#Link" title="이용약관">이용약관</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <div class="sub-content-1">
+            <h1>Step 1. 주문수량 선택</h1>
+            <p class="main-p">원하시는 수량 만큼 스티커를 주문하세요.</p>
+            <!--<img src="가격표 이미지" alt="□">-->
+            <p class="sub-p">* 100개 이상은 개별 문의</p>
+        </div>
+        <div class="sub-content-2">
+            <h1>Step 2. 로고 변경 옵션</h1>
+            <p class="main-p">주요 화면에 귀사의 로고를 넣어
+                <br>더욱 완벽하게 브랜딩해보세요.</p>
+            <!--<img src="가격표 이미지" alt="□">-->
+            <p class="sub-p">* 하기 이미지는 예시입니다</p>
+            <!--<img src="로고 예시 이미지" alt="□">-->
+        </div>
+        <button onClick="gotoBuyForm();"></buttononClick>주문하러 가기</button>
+        <script>
+            function gotoBuyForm(){
+                window.open('https://docs.google.com/forms/d/e/1FAIpQLSdG3r9oZFWtsrzWQNeCtRL_C-SK_7ouWlAsiLR5tBIYSdME_w/viewform?usp=pp_url', '_blank'); 
+            }
+        </script>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./js/nav.js"></script>
+</body>
+</html>
