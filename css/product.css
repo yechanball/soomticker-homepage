@@ -22,23 +22,45 @@ body {
 
     .content > div {
         position: absolute;
-        top: calc((100vw/1920)*150);
+        top: calc((100vw/1920)*130);
         width: 50%;
-        height: auto;
+        height: 65%;
     }
 
     .sub-content-1 {
         left: 0%;
+        text-align: center;
     }
+    .sub-content-1 > img { margin-top: 8%; width: 50%;}
+    
     .sub-content-2 {
         left: 50%;
-        border-left: 1px solid #000000;
+        border-left: 0.5px solid #BFBFBF;
+        text-align: center;
+    }
+    .sub-content-2 > img { width: 30%;}
+
+    .content h1 {
+        margin-top: 0;
+        text-align: center;
+        font-family: 'Noto Sans KR Black';
+        font-size: calc((100vw/1920)*60);
+        line-height: calc((100vw/1920)*80);
+        color: #5D5D5D;
+    }
+
+    .content p {
+        text-align: center;
+        font-family: 'Noto Sans KR Bold';
+        font-size: calc((100vw/1920)*25);
+        line-height: calc((100vw/1920)*40);
+        color: #909090;
     }
 
     .content > button {
         position: absolute;
         left: 40%;
-        bottom: 10%;
+        bottom: 7%;
         font-family: 'Noto Sans KR Medium';
         font-size: 20px;
         color: #727272;
@@ -51,25 +73,6 @@ body {
         border: 1px solid #808080;
         border-radius: 40px;
         cursor: pointer;
-    }
-
-    .content h1 {
-        margin-top: calc((100vw/1920)*150);
-        margin-bottom: calc((100vw/1920)*80);
-        text-align: center;
-        font-family: 'Noto Sans KR Black';
-        font-size: calc((100vw/1920)*60);
-        line-height: calc((100vw/1920)*80);
-        color: #5D5D5D;
-    }
-
-    .content p {
-        margin-bottom: calc((100vw/1920)*80);
-        text-align: center;
-        font-family: 'Noto Sans KR Bold';
-        font-size: calc((100vw/1920)*25);
-        line-height: calc((100vw/1920)*49);
-        color: #B2B2B2;
     }
 }
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
