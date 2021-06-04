@@ -78,6 +78,7 @@ body {
     .content {
         position: relative;
         width: 100%;
+        max-width: 400px;
         height: 100%;
         margin: 0;
     }
@@ -91,7 +92,7 @@ body {
     }
 
     .content-mobile h1 {
-        margin-bottom: 10vh;
+        margin-bottom: 8vh;
         text-align: center;
         font-family: 'Noto Sans KR Black';
         font-size: 30px;
@@ -100,7 +101,7 @@ body {
     }
 
     .main-word {
-        margin-bottom: 15vh;
+        margin-bottom: 12vh;
         text-align: center;
         font-family: 'Noto Sans KR Bold';
         font-size: 18px;
