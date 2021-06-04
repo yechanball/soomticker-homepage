@@ -52,22 +52,39 @@
         </nav>
     </div>
     <div class="content">
-        <h1>Contact</h1>
-        <p>🙂  신속하게 확인해서 정확하게 답변 드리겠습니다 🙂
-            <br>상담시간 : 월 ~ 토, 오전 10:00 ~ 오후 10:00</p>
-        <table>
-            <tr>
-                <td class="column-1">이메일&nbsp;</td>
-                <td class="column-2">&emsp;soomthememory@gmail.com</td>
-            </tr>
-            <tr>
-                <td class="column-1">카카오톡&nbsp;</td>
-                <td class="column-2">&emsp;soom0229</td>
-            </tr>
-        </table>
+        <div class="content-pc">
+            <h1>Contact</h1>
+            <p>🙂  신속하게 확인해서 정확하게 답변 드리겠습니다 🙂
+                <br>상담시간 : 월 ~ 토, 오전 10:00 ~ 오후 10:00</p>
+            <table>
+                <tr>
+                    <td class="column-1">이메일&nbsp;</td>
+                    <td class="column-2">&emsp;soomthememory@gmail.com</td>
+                </tr>
+                <tr>
+                    <td class="column-1">카카오톡&nbsp;</td>
+                    <td class="column-2">&emsp;<a href="#" onclick="gotokakaochat();">soom0229</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="content-mobile">
+            <h1>Contact</h1>
+            <p class="main-word">신속하게 확인해서<br>정확하게 답변 드리겠습니다
+                <br><br>상담시간 : 월 ~ 토,<br>오전 10:00 ~ 오후 10:00</p>
+            <p class="title-word">이메일</p>
+            <p class="sub-word">soomthememory@gmail.com</p>
+            <p class="title-word">카카오톡</p>
+            <p class="sub-word"><a href="#" onclick="gotokakaochat();">soom0229</a></p>
+        </div>
     </div>
-    
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./js/nav.js"></script>
+    <script>
+        // Open Kakao chat
+        function gotokakaochat(){
+            window.open('https://pf.kakao.com/_CxdxiLK/chat', '_blank'); 
+        }
+    </script>
 </body>
 </html>
