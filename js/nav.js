@@ -11,6 +11,12 @@ $menulink.click(function (e) {
     $menulink.toggleClass('active');
     $menu.toggleClass('active');
 });
+// 서브메뉴 클릭시 spinner-form checked 해제
+var $submenu = ($('ul li ul li a'));
+$submenu.click(function (e) {
+    document.getElementById('spinner-form').checked = false;
+});
+ 
 $menuTrigger.click(function (e) {
     e.preventDefault();
     var t = $(this);
