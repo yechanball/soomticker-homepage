@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/about.css">
 </head>
 <body>
@@ -70,7 +71,8 @@
                     <br>어느 물건이든 이야기가 담기면 특별해집니다.
                     <br>여러분의 제품에 고객님의 이야기가 담길 수 있도록 ‘숨’을 활용해보세요.
                     <br>제품이 여러분의 손을 떠나 고객님에게 갔을 때, 더 없이 특별한 물건으로 사랑받을 수 있게 될 거에요.</p>
-                <button><img src="./src/img/playbutton.png" alt="□"></button>
+                <audio class="bgm-audio" src="./src/audio/bgm_rainsound.mp3"></audio>
+                <button id="playbutton" class="btn animate__animated animate__headShake animate__repeat-2 animate__slow"><img src="./src/img/playbutton.png" alt="□"></button>
             </div>
             <div class="swiper-slide slide-03">
                 <h1>Logo Design & Naming</h1>
@@ -116,12 +118,21 @@
             },
         });
 
+        const animationButton = document.querySelector('.btn');
+
         swiper.on('slideChange', function(){
             if(swiper.activeIndex == 0){
                 ($('.sub-1')).addClass('current');
                 ($('.sub-2')).removeClass('current');
+                animationButton.classList.remove('animate__animated', 'animate__headShake', 'animate__repeat-2', 'animate__slow');
             }
             else{
+                if(swiper.activeIndex == 1){
+                    animationButton.classList.add('animate__animated', 'animate__headShake', 'animate__repeat-2', 'animate__slow');
+                }
+                else{
+                    animationButton.classList.remove('animate__animated', 'animate__headShake', 'animate__repeat-2', 'animate__slow');
+                }
                 ($('.sub-1')).removeClass('current');
                 ($('.sub-2')).addClass('current');
             }
@@ -133,6 +144,16 @@
 
         function moveto_1(){
             swiper.slideTo(1);
+        }
+
+        const audio = document.querySelector('.bgm-audio'); 
+        audio.controls = false;
+
+        playbutton.onclick = function (e) {
+            audio.play();
+            audio.loop = true;
+            animationButton.classList.remove('animate__animated', 'animate__headShake', 'animate__repeat-2', 'animate__slow');
+            animationButton.classList.add('animate__animated', 'animate__pulse', 'animate__infinite');
         }
     </script>
 </body>
