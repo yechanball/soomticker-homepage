@@ -39,6 +39,11 @@ body {
         color: #B2B2B2;
     }
 
+    .content img {
+        height: calc((100vw/1920)*30);
+        margin-right: 5px;
+    }
+
     .content table {
         position: absolute;
         margin-top: 10%;
@@ -98,6 +103,11 @@ body {
         font-size: 30px;
         line-height: 60px;
         color: #5D5D5D;
+    }
+
+    .content-mobile img {
+        height: 15px;
+        margin-right: 3px;
     }
 
     .main-word {
