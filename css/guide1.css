@@ -14,7 +14,7 @@ body {
 #subcontent04 { visibility: hidden; }
 
 /* PC (해상도 1024px)*/
-@media all and (min-width:768px) {
+@media all and (min-width:769px) {
     body {
         overflow-x: hidden;
         overflow-y: scroll;
@@ -160,7 +160,7 @@ body {
     style input
 }*/
 /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
-@media all and (max-width:767px) {
+@media all and (max-width:768px) {
     body {
         overflow: hidden;
     }
@@ -178,13 +178,12 @@ body {
         top: 10%;
         left: 10%;
         width: 80%;
-        height: calc((100vw/375)*60);
+        height: 60px;
     }
 
     .content-sub-menu button {
-        margin-left: 3%;
-        margin-right: 4%;
-        width: 14%;
+        width: 23%;
+        padding: 0;
         cursor: pointer;
         border: none;
         background-color: rgba(255, 255, 255, 0);
@@ -194,23 +193,24 @@ body {
     .content-sub-menu button:hover > div >  p { color:#E1AA4F }
 
     .content-sub-menu > button > div {
-        width: calc((100vw/375)*60);
+        width: 100%;
         text-align: center;
     }
 
     .content-sub-menu > button > div > p {
         font-family: 'Noto Sans KR Medium';
-        font-size: calc((100vw/375)*12);
-        line-height: calc((100vw/375)*15);
+        font-size: 12px;
+        line-height: 15px;
         color: #C6C6C6;
         margin: 0;
         margin-bottom: 8px;
+        overflow: visible;
     }
     
     .content-sub-menu > button > div > div {
-        margin-left: calc((100vw/375)*15);
-        width: calc((100vw/375)*30);
-        height: calc((100vw/375)*30);
+        margin-left: 10%;
+        width: 80%;
+        height: auto;
         background-image: url("../src/img/guide_menu_gray.png");
         background-size: contain;
         background-repeat: no-repeat;
@@ -219,8 +219,8 @@ body {
     
     .content-sub-menu > button > div > div > p {
         font-family: 'Noto Sans KR Medium';
-        font-size: calc((100vw/375)*10);
-        line-height: calc((100vw/375)*30);
+        font-size: 10px;
+        line-height: 30px;
         color: #FFFFFF;
         margin: 0;
     }
@@ -232,8 +232,8 @@ body {
 
     .title-word {
         font-family: 'Noto Sans KR Medium';
-        font-size: calc((100vw/375)*22);
-        line-height: calc((100vw/375)*40);
+        font-size: 22px;
+        line-height: 40px;
         color: #5D5D5D;
         font-weight: bold;
     }
@@ -244,8 +244,8 @@ body {
 
     .main-word {
         font-family: 'Noto Sans KR Medium';
-        font-size: calc((100vw/375)*13);
-        line-height: calc((100vw/375)*26);
+        font-size: 13px;
+        line-height: 26px;
         color: #5D5D5D;
     }
 
@@ -253,8 +253,8 @@ body {
         width: 85%;
         margin-left: 7.5%;
         font-family: 'Noto Sans KR Medium';
-        font-size: calc((100vw/375)*10);
-        line-height: calc((100vw/375)*15);
+        font-size: 10px;
+        line-height: 15px;
         color: #7C7C7C;
     }
 
