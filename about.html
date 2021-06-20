@@ -145,6 +145,7 @@
 
         swiper.on('slideChange', function(){
             if(swiper.activeIndex == 0){
+                bgm.pause();
                 ($('.sub-1')).addClass('current');
                 ($('.sub-2')).removeClass('current');
                 animationButton.classList.remove('animate__animated', 'animate__headShake', 'animate__repeat-2', 'animate__slow');
@@ -154,6 +155,7 @@
                     animationButton.classList.add('animate__animated', 'animate__headShake', 'animate__repeat-2', 'animate__slow');
                 }
                 else{
+                    bgm.pause();
                     animationButton.classList.remove('animate__animated', 'animate__headShake', 'animate__repeat-2', 'animate__slow');
                 }
                 ($('.sub-1')).removeClass('current');
