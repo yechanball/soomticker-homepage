@@ -40,8 +40,10 @@ body {
     }
 
     .content img {
-        height: calc((100vw/1920)*30);
-        margin-right: 5px;
+        height: calc((100vw/1920)*50);
+        vertical-align: text-top;
+        border-radius: calc((100vw/1920)*14);
+        margin-left: 1%;
     }
 
     .content table {
@@ -50,6 +52,8 @@ body {
         left: 17%;
         width: 70%;
         border: none;
+        justify-content: center;
+        align-items: center;
     }
 
     .column-1 {
@@ -106,8 +110,10 @@ body {
     }
 
     .content-mobile img {
-        height: 15px;
+        height: 20px;
         margin-right: 3px;
+        vertical-align: middle;
+        border-radius: 5px;
     }
 
     .main-word {

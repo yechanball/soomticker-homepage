@@ -308,7 +308,7 @@ body {
     }
 
     .main-slide-2-inner h1 {
-        font-family: 'Noto Sans KR Light';
+        font-family: 'Noto Sans KR Bold';
         font-size: 28px;
         color: #505050;
     }
@@ -365,17 +365,16 @@ body {
 
     .main-slide-3-inner > div > div > img {
         position: absolute;
-        margin-top: 1%;
-        left: 5%;
-        width: 120px;
-        height: 120px;
-        opacity: 0.6;
+        margin-top: -4%;
+        left: 8%;
+        width: 100px;
+        height: 100px;
     }
 
     .main-slide-3-inner > div > div > h2 {
         position: absolute;
-        margin-top: 12%;
-        left: 18%;
+        margin-top: 18%;
+        left: 16%;
         font-family: 'Noto Sans KR Bold';
         font-size: 20px;
         line-height: 50px;
