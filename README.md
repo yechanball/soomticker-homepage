@@ -1,1 +1,1 @@
-# SOOM homepage frontend
+# SOOM homepage
