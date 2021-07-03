@@ -75,7 +75,7 @@ nav { width: 100%; }
     color: #E1AA4F;
 }
 
-.menu ul li > a { padding: 15px; }
+.menu ul li > a { padding: 15px 0px 15px 0px; }
 
 .menu ul ul {
     display: none;
@@ -90,7 +90,7 @@ nav { width: 100%; }
 .menu ul ul > li { position: relative; text-align: center;}
 
 .menu ul ul > li a {
-    padding: 15px;
+    padding: 15px 0px 15px 0px;
     height: auto;
     font-family: 'Noto Sans KR Medium';
     font-size: calc((100vw/1920)*25);
@@ -314,13 +314,11 @@ nav { width: 100%; }
     
     .main-logo {
         position: absolute;
-        margin: 15px;
-        height: 30px;
-        width: 30px;
+        height: 100%;
         padding: 0%;
         border: none;
         background-color: rgba(255, 255, 255, 0);
         cursor: pointer;
     }
-    .main-logo img { margin: 0%; height: 100%;}
+    .main-logo img { padding: 5% 0 0 10%; height: 60%;}
 }
