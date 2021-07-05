@@ -145,20 +145,6 @@
                 invert: false,
             },
         });
-
-        const slide03_1 = document.querySelector('.main-slide-3-inner h1');
-        const slide03_2 = document.querySelector('.main-slide-3-inner div');
-
-        swiper.on('slideChange', function(){
-            if(swiper.activeIndex == 2){
-                slide03_1.classList.add('animate__animated', 'animate__fadeIn');
-                slide03_2.classList.add('animate__animated', 'animate__fadeIn', 'animate__slow');
-            }
-            else{
-                slide03_1.classList.remove('animate__animated', 'animate__fadeIn');
-                slide03_2.classList.remove('animate__animated', 'animate__fadeIn', 'animate__slow');
-            }
-        });
     </script>
 </body>
 </html>
