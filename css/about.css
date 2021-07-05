@@ -36,14 +36,24 @@ body {
         height: auto;
     }
 
-    .slide-01 p {
+    .main-p {
         position: absolute;
-        top: calc((100vw/1920)*400);
+        bottom: calc((100vw/1920)*360);
         left: calc((100vw/1920)*1276);
-        font-family: 'Noto Sans KR Medium';
+        font-family: 'Noto Sans KR Bold';
         font-size: calc((100vw/1920)*43);
         line-height: calc((100vw/1920)*70);
         color: #4A4A4A;
+    }
+
+    .sub-p {
+        position: absolute;
+        bottom: calc((100vw/1920)*80);
+        left: calc((100vw/1920)*1300);
+        font-family: 'Noto Sans KR Regular';
+        font-size: calc((100vw/1920)*20);
+        line-height: calc((100vw/1920)*29);
+        color: #707070;
     }
 
     .slide-02 h1 {
@@ -81,7 +91,7 @@ body {
 
     .slide-03 h1 {
         position: absolute;
-        top: calc((100vw/1920)*150);
+        top: calc((100vw/1920)*130);
         left: calc((100vw/1920)*147);
         font-family: 'Noto Sans KR Bold';
         font-size: calc((100vw/1920)*50);
@@ -91,7 +101,7 @@ body {
 
     .subcontent-01 .subcontent-01-p {
         position: absolute;
-        top: calc((100vw/1920)*300);
+        top: calc((100vw/1920)*270);
         left: calc((100vw/1920)*147);
         font-family: 'Noto Sans KR Medium';
         font-size: calc((100vw/1920)*35);
@@ -101,7 +111,7 @@ body {
 
     .subcontent-01 img {
         position: absolute;
-        top: calc((100vw/1920)*430);
+        top: calc((100vw/1920)*400);
         left: calc((100vw/1920)*189);
         width: calc((100vw/1920)*148);
         border-radius: calc((100vw/1920)*20);
@@ -111,7 +121,7 @@ body {
 
     .subcontent-01 p {
         position: absolute;
-        top: calc((100vw/1920)*430);
+        top: calc((100vw/1920)*400);
         left: calc((100vw/1920)*445);
         font-family: 'Noto Sans KR Medium';
         font-size: calc((100vw/1920)*20);
@@ -125,25 +135,25 @@ body {
 
     .subcontent-02-img-01 {
         position: absolute;
-        top: calc((100vw/1920)*400);
+        top: calc((100vw/1920)*370);
         left: calc((100vw/1920)*1054);
     }
 
     .subcontent-02-img-02 {
         position: absolute;
-        top: calc((100vw/1920)*400);
+        top: calc((100vw/1920)*370);
         left: calc((100vw/1920)*1329);
     }
 
     .subcontent-02-img-03 {
         position: absolute;
-        top: calc((100vw/1920)*400);
+        top: calc((100vw/1920)*370);
         left: calc((100vw/1920)*1606);
     }
 
     .subcontent-03 .subcontent-03-p {
         position: absolute;
-        top: calc((100vw/1920)*600);
+        top: calc((100vw/1920)*570);
         left: calc((100vw/1920)*147);
         font-family: 'Noto Sans KR Medium';
         font-size: calc((100vw/1920)*35);
@@ -153,7 +163,7 @@ body {
 
     .subcontent-03 img {
         position: absolute;
-        top: calc((100vw/1920)*730);
+        top: calc((100vw/1920)*700);
         left: calc((100vw/1920)*189);
         width: calc((100vw/1920)*148);
         border-radius: calc((100vw/1920)*20);
@@ -163,7 +173,7 @@ body {
 
     .subcontent-03 p {
         position: absolute;
-        top: calc((100vw/1920)*730);
+        top: calc((100vw/1920)*682);
         left: calc((100vw/1920)*445);
         font-family: 'Noto Sans KR Medium';
         font-size: calc((100vw/1920)*20);
@@ -177,19 +187,19 @@ body {
 
     .subcontent-04-img-01 {
         position: absolute;
-        top: calc((100vw/1920)*700);
+        top: calc((100vw/1920)*670);
         left: calc((100vw/1920)*1054);
     }
 
     .subcontent-04-img-02 {
         position: absolute;
-        top: calc((100vw/1920)*700);
+        top: calc((100vw/1920)*670);
         left: calc((100vw/1920)*1329);
     }
 
     .subcontent-04-img-03 {
         position: absolute;
-        top: calc((100vw/1920)*700);
+        top: calc((100vw/1920)*670);
         left: calc((100vw/1920)*1606);
     }
 }
@@ -213,14 +223,24 @@ body {
         height: auto;
     }
 
-    .slide-01 p {
+    .main-p {
         position: absolute;
         top: calc((100vh/812)*126);
         left: 50px;
         font-family: 'Noto Sans KR Medium';
         font-size: 20px;
-        line-height: 40px;
+        line-height: 35px;
         color: #4A4A4A;
+    }
+
+    .sub-p {
+        position: absolute;
+        top: calc((100vh/812)*320);
+        left: 50px;
+        font-family: 'Noto Sans KR Regular';
+        font-size: 9px;
+        line-height: 11px;
+        color: #707070;
     }
 
     .slide-02 h1 {
@@ -257,7 +277,7 @@ body {
    
     .slide-03 h1 {
         position: absolute;
-        top: calc((100vh/812)*72);
+        top: calc((100vh/812)*60);
         left: 25px;
         font-family: 'Noto Sans KR Bold';
         font-size: 25px;
@@ -267,7 +287,7 @@ body {
 
     .subcontent-01 .subcontent-01-p {
         position: absolute;
-        top: calc((100vh/812)*152);
+        top: calc((100vh/812)*135);
         left: 25px;
         font-family: 'Noto Sans KR Medium';
         font-size: 20px;
@@ -277,7 +297,7 @@ body {
 
     .subcontent-01 img {
         position: absolute;
-        top: calc((100vh/812)*228);
+        top: calc((100vh/812)*220);
         left: 30px;
         width: 60px;
         border-radius: 5px;
@@ -286,39 +306,39 @@ body {
 
     .subcontent-01 p {
         position: absolute;
-        top: calc((100vh/812)*206);
+        top: calc((100vh/812)*203);
         left: 100px;
         font-family: 'Noto Sans KR Medium';
         font-size: 11px;
-        line-height: 26px;
+        line-height: 22px;
         color: #646464;
     }
 
     .subcontent-02 img {
-        width: 90px;
+        width: 80px;
     }
 
     .subcontent-02-img-01 {
         position: absolute;
-        top: calc((100vh/812)*330);
+        top: calc((100vh/812)*325);
         left: 25px;
     }
 
     .subcontent-02-img-02 {
         position: absolute;
-        top: calc((100vh/812)*330);
+        top: calc((100vh/812)*325);
         left: 140px;
     }
 
     .subcontent-02-img-03 {
         position: absolute;
-        top: calc((100vh/812)*330);
+        top: calc((100vh/812)*325);
         left: 255px;
     }
 
     .subcontent-03 .subcontent-03-p {
         position: absolute;
-        top: calc((100vh/812)*450);
+        top: calc((100vh/812)*430);
         left: 25px;
         font-family: 'Noto Sans KR Medium';
         font-size: 20px;
@@ -328,7 +348,7 @@ body {
 
     .subcontent-03 img {
         position: absolute;
-        top: calc((100vh/812)*526);
+        top: calc((100vh/812)*515);
         left: 30px;
         width: 60px;
         border-radius: 5px;
@@ -337,33 +357,33 @@ body {
 
     .subcontent-03 p {
         position: absolute;
-        top: calc((100vh/812)*503);
+        top: calc((100vh/812)*495);
         left: 100px;
         font-family: 'Noto Sans KR Medium';
         font-size: 11px;
-        line-height: 26px;
+        line-height: 20px;
         color: #646464;
     }
 
     .subcontent-04 img {
-        width: 90px;
+        width: 80px;
     }
 
     .subcontent-04-img-01 {
         position: absolute;
-        top: calc((100vh/812)*627);
+        top: calc((100vh/812)*623);
         left: 25px;
     }
 
     .subcontent-04-img-02 {
         position: absolute;
-        top: calc((100vh/812)*627);
+        top: calc((100vh/812)*623);
         left: 140px;
     }
 
     .subcontent-04-img-03 {
         position: absolute;
-        top: calc((100vh/812)*627);
+        top: calc((100vh/812)*623);
         left: 255px;
     }
 }

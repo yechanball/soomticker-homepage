@@ -314,11 +314,12 @@ nav { width: 100%; }
     
     .main-logo {
         position: absolute;
-        height: 100%;
+        margin: 13px;
+        height: 36px;
         padding: 0%;
         border: none;
         background-color: rgba(255, 255, 255, 0);
         cursor: pointer;
     }
-    .main-logo img { padding: 5% 0 0 10%; height: 60%;}
+    .main-logo img { margin: 0%; height: 100%; }
 }

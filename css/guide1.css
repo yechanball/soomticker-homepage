@@ -97,17 +97,18 @@ body {
     }
 
     .main-word {
-        font-family: 'Noto Sans KR Medium';
+        font-family: 'Noto Sans KR Bold';
         font-size: calc((100vw/1920)*30);
-        line-height: calc((100vw/1920)*45);
+        line-height: calc((100vw/1920)*50);
         color: #5D5D5D;
     }
 
     .sub-word {
         font-family: 'Noto Sans KR Medium';
         font-size: calc((100vw/1920)*20);
-        line-height: calc((100vw/1920)*60);
+        line-height: calc((100vw/1920)*35);
         color: #7C7C7C;
+        padding-bottom: 40px;
     }
 
     #subcontent01 {
@@ -243,7 +244,7 @@ body {
     }
 
     .main-word {
-        font-family: 'Noto Sans KR Medium';
+        font-family: 'Noto Sans KR Bold';
         font-size: 13px;
         line-height: 26px;
         color: #5D5D5D;
