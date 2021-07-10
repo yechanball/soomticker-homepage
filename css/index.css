@@ -264,6 +264,16 @@ body {
         color: #E1AA4F; 
         box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.16);
     }
+
+    .pagenation {
+        position: absolute;
+        bottom: 20px;
+        right: 30px;
+        font-family: 'Noto Sans KR Bold';
+        font-size: 40px;
+        color: #505050;
+        z-index: 9999;
+    }
 }
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
 /*@media all and (min-width:768px) and (max-width:1023px) { 
@@ -469,5 +479,15 @@ body {
         border: 1px solid #808080;
         border-radius: 20px;
         cursor: pointer;
+    }
+
+    .pagenation {
+        position: absolute;
+        bottom: 12px;
+        right: 18px;
+        font-family: 'Noto Sans KR Bold';
+        font-size: 22px;
+        color: #505050;
+        z-index: 9999;
     }
 }
