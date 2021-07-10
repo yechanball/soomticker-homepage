@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi"/>
     <title>loading...</title>
+    <link href="./src/img/favicon_logo.png" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" href="./font/NotoSansKR.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <style type="text/css">
@@ -32,6 +33,7 @@
         #logoArea {
             margin-top: 45%;
             text-align: center;
+            visibility: hidden;
         }
 
         #logoArea img {
@@ -42,16 +44,19 @@
 </head>
 <body>
     <div id="wrap">
-        <div id="logoArea" class="animation-element" class="animate__animated animate__fadeIn animate__slow">
+        <div id="logoArea" class="animation-element">
             <img src="./src/img/logo.png" alt="Logo img">
         </div>
-        <script type="text/javascript">
-            const element = document.querySelector('.animation-element');
-            element.classList.add('animate__animated', 'animate__fadeIn', 'animate__slow');
-            
-            element.addEventListener('animationend', () => {
-                location.replace("./index.html");
-            });
+        <script>
+            window.onload = function() {
+                const element = document.querySelector('.animation-element');
+                document.all.logoArea.style.visibility="visible";
+                element.classList.add('animate__animated', 'animate__fadeIn', 'animate__slow');
+
+                element.addEventListener('animationend', () => {
+                    location.replace("./index.html");
+                });
+            };
         </script>
     </div>
 </body>
