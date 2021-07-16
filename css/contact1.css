@@ -39,6 +39,14 @@ body {
         color: #B2B2B2;
     }
 
+    .content button {
+        font-size: calc((100vw/1920)*25);
+        padding: 0;
+        margin: 0;
+        border: none;
+        background-color: #FFFFFF;
+    }
+
     .content img {
         height: calc((100vw/1920)*50);
         vertical-align: text-top;
@@ -114,6 +122,14 @@ body {
         margin-right: 3px;
         vertical-align: middle;
         border-radius: 5px;
+    }
+
+    .content-mobile button {
+        font-size: 18px;
+        padding: 0;
+        margin: 0;
+        border: none;
+        background-color: #FFFFFF;
     }
 
     .main-word {
