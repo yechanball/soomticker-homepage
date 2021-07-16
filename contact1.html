@@ -55,7 +55,7 @@
     <div class="content">
         <div class="content-pc">
             <h1>Contact</h1>
-            <p>🙂  신속하게 확인해서 정확하게 답변 드리겠습니다 🙂
+            <p>🙂  신속하게 확인해서 정확하게 답변 드리겠습니다 <button onclick="YC();">🙂</button>
                 <br>상담시간 : 월 ~ 토, 오전 10:00 ~ 오후 10:00</p>
             <table>
                 <tr>
@@ -70,7 +70,7 @@
         </div>
         <div class="content-mobile">
             <h1>Contact</h1>
-            <p class="main-word">신속하게 확인해서<br>정확하게 답변 드리겠습니다
+            <p class="main-word">신속하게 확인해서<br>정확하게 답변 드리겠습니다<button onclick="YC();">🙂</button>
                 <br><br>상담시간 : 월 ~ 토,<br>오전 10:00 ~ 오후 10:00</p>
             <p class="title-word">이메일</p>
             <p class="sub-word"><a href="mailto:soomthememory@gmail.com"><img src="./src/img/button_gmail.png">soomthememory@gmail.com</a></p>
@@ -86,6 +86,8 @@
         function gotokakaochat(){
             window.open('https://pf.kakao.com/_CxdxiLK/chat', '_blank'); 
         }
+        var num = 0;
+        function YC(){num += 1; if(num%3 == 0){alert("Hello World!!\nMade by 공예찬");}}
     </script>
 </body>
 </html>
