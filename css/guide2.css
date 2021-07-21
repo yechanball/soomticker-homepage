@@ -1,3 +1,7 @@
+html {
+    overflow: scroll;
+}
+
 html,
 body {
     display: flex;
@@ -6,7 +10,6 @@ body {
     width: 100%;
     height: 100%;
     margin: 0;
-    overflow: scroll;
 }
 
 .content {
@@ -28,25 +31,61 @@ body {
         color: #5D5D5D;
     }
 
-    .faq-div {
-        width: 80%;
-        padding-bottom: calc((100vw/1920)*80);
+    .accordion {
+        list-style:none;
+        padding:0;	
+        width: 100%;
+        margin: 50px auto 100px auto;
+        border-top: 2px solid #D0BEBE;
     }
 
-    .question-p {
-        font-family: 'Noto Sans KR Black';
-        font-size: calc((100vw/1920)*44);
-        font-weight: bold;
-        line-height: calc((100vw/1920)*80);
-        color: #CBCBCB;
+    .accordion li {
+        list-style:none;
+        border-bottom: 2px solid #D0BEBE;
+        position: relative;
     }
-
-    .answer-p {
-        padding-left: calc((100vw/1920)*70);
+    
+    .accordion li p {
+        display: none;
+        padding: 10px calc((100vw/1920)*55) 30px;
         font-family: 'Noto Sans KR Medium';
         font-size: calc((100vw/1920)*22);
         line-height: calc((100vw/1920)*36);
         color: #484848;
+    }
+
+    .accordion a {
+        width: 100%;
+        display: block;
+        cursor: pointer;
+        font-family: 'Noto Sans KR Bold';
+        font-size: calc((100vw/1920)*32);
+        line-height: calc((100vw/1920)*100);
+        text-indent: calc((100vw/1920)*60);
+        color: #484848;
+        user-select: none;
+    }
+
+    .accordion a:before {
+        width: calc((100vw/1920)*20);
+        height: calc((100vw/1920)*20);
+        border-right: 5px solid #E1AA4F;
+        border-bottom: 5px solid #E1AA4F;
+        position: absolute;
+        left: calc((100vw/1920)*10);
+        content: " ";
+        top: calc((100vw/1920)*38);
+        transform: rotate(-45deg);
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    a.active:before {
+        transform: rotate(45deg);
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
     }
 }
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
@@ -65,23 +104,62 @@ body {
         color: #5D5D5D;
     }
 
-    .faq-div {
+    .accordion {
+        list-style:none;
+        padding:0;	
         width: 100%;
-        padding-bottom: 5vh;
+        margin: 25px auto 50px auto;
+        border-top: 0.5px solid #D0BEBE;
     }
 
-    .question-p {
-        font-family: 'Noto Sans KR Black';
-        font-size: 16px;
-        font-weight: bold;
-        line-height: 36px;
-        color: #CBCBCB;
+    .accordion li {
+        list-style:none;
+        border-bottom: 0.5px solid #D0BEBE;
+        position: relative;
     }
-
-    .answer-p {
+    
+    .accordion li p {
+        display: none;
+        padding: 5px 10px 10px;
         font-family: 'Noto Sans KR Medium';
-        font-size: 12px;
-        line-height: 26px;
+        font-size: calc((100vw/480)*13);
+        line-height: calc((100vw/480)*23);
         color: #484848;
+    }
+
+    .accordion a {
+        width: 100%;
+        display: block;
+        cursor: pointer;
+        font-family: 'Noto Sans KR Bold';
+        font-size: calc((100vw/480)*18);
+        line-height: calc((100vw/480)*30);
+        text-indent: calc((100vw/480)*28);
+        margin-top: calc((100vw/480)*10);
+        margin-bottom: calc((100vw/480)*10);
+        color: #484848;
+        user-select: none;
+    }
+
+    .accordion a:before {
+        width: calc((100vw/480)*8);
+        height: calc((100vw/480)*8);
+        border-right: 3px solid #E1AA4F;
+        border-bottom: 3px solid #E1AA4F;
+        position: absolute;
+        left: calc((100vw/480)*5);
+        content: " ";
+        top: calc((100vw/480)*10);
+        transform: rotate(-45deg);
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    a.active:before {
+        transform: rotate(45deg);
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
     }
 }
