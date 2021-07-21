@@ -277,22 +277,25 @@ body {
 
     .guideDirection {
         position: absolute;
-        top: 40%;
-        left: 45%;
-        width: 10%;
-        padding-top: 1%;
-        padding-bottom: 1%;
+        top: 37%;
+        left: calc((100vw/1920)*850);
+        width: calc((100vw/1920)*220);
+        padding-top: calc((100vw/1920)*25);
+        padding-bottom: calc((100vw/1920)*25);
         z-index: 9999;
         text-align: center;
         border-radius: calc((100vw/1920)*50);
         background-color: #E1AA4F;
         visibility: hidden;
     }
-    .guideDirection img { width: 60%;}
+    .guideDirection img { 
+        width: calc((100vw/1920)*70); 
+    }
     .guideDirection p {
-        font-family: 'Noto Sans KR Bold';
+        font-family: 'Noto Sans KR Regular';
         font-size: calc((100vw/1920)*30);
         color: #ffffff;
+        padding-bottom: calc((100vw/1920)*20);
         margin: 0;
     }
 }
@@ -514,22 +517,25 @@ body {
 
     .guideDirection {
         position: absolute;
-        top: 40%;
-        left: 37%;
-        width: 26%;
-        padding-top: 3%;
-        padding-bottom: 3%;
+        top: 35%;
+        left: 30%;
+        width: 40%;
+        padding-top: calc((100vh/812)*20);
+        padding-bottom: calc((100vh/812)*20);
         z-index: 9999;
         text-align: center;
         border-radius: calc((100vh/812)*20);
         background-color: #E1AA4F;
         visibility: hidden;
     }
-    .guideDirection img { width: 60%;}
+    .guideDirection img { 
+        height: calc((100vh/812)*85);
+    }
     .guideDirection p {
-        font-family: 'Noto Sans KR Bold';
-        font-size: calc((100vh/812)*18);
+        font-family: 'Noto Sans KR Regular';
+        font-size: calc((100vw/360)*24);
         color: #ffffff;
+        padding-bottom: calc((100vh/812)*20);
         margin: 0;
     }
 }
