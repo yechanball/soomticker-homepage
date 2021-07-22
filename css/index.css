@@ -105,6 +105,7 @@ body {
         margin-top: 30px;
         border: 1px solid #808080;
         border-radius: 30px;
+        box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.16);
         cursor: pointer;
     }
     .main-slide-2 button:hover { 
@@ -112,7 +113,7 @@ body {
         width: 202px;
         height: 72px;
         margin-top: 29px;
-        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.16);
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.16);
     }
 
     .main-slide-3-inner {
@@ -178,6 +179,7 @@ body {
         margin-top: 30px;
         border: 1px solid #808080;
         border-radius: 30px;
+        box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.16);
         cursor: pointer;
     }
     .inner-btn:hover {
@@ -185,7 +187,7 @@ body {
         width: 202px;
         height: 52px;
         margin-top: 29px;
-        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.16);
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.16);
     }
 
     .main-slide-3-inner > div > img{
@@ -252,6 +254,7 @@ body {
         min-height: 50px;
         border: 1px solid #808080;
         border-radius: 40px;
+        box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.16);
         cursor: pointer;
     }
     .main-slide-4-inner > button:hover {
@@ -262,17 +265,7 @@ body {
         height: calc(8%+2px);
         min-height: 52px;
         color: #E1AA4F; 
-        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.16);
-    }
-
-    .pagenation {
-        position: absolute;
-        bottom: 20px;
-        right: 30px;
-        font-family: 'Noto Sans KR Bold';
-        font-size: 40px;
-        color: #505050;
-        z-index: 9999;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.16);
     }
 
     .guideDirection {
@@ -366,6 +359,7 @@ body {
         margin-top: calc((100%/375)*15);
         border: 1px solid #808080;
         border-radius: 40px;
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.16);
         cursor: pointer;
     }
     
@@ -437,6 +431,7 @@ body {
         margin-left: 35%;
         border: 1px solid #808080;
         border-radius: 20px;
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.16);
         cursor: pointer;
     }
 
@@ -502,17 +497,8 @@ body {
         text-align: center;
         border: 1px solid #808080;
         border-radius: 20px;
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.16);
         cursor: pointer;
-    }
-
-    .pagenation {
-        position: absolute;
-        bottom: 12px;
-        right: 18px;
-        font-family: 'Noto Sans KR Bold';
-        font-size: 22px;
-        color: #505050;
-        z-index: 9999;
     }
 
     .guideDirection {

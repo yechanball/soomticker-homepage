@@ -121,39 +121,43 @@ body {
         border-radius: calc((100vw/1920)*40);
         background-color: #FBFBFB;
         text-align: center;
+        overflow: hidden;
     }
     #subcontent02 {
         position: absolute;
         top: calc((100vw/1920)*370);
         left: 10%;
         width: 80%;
-        height: auto;
+        height: 1px;
         border: 1px solid #4848483b;
         border-radius: calc((100vw/1920)*40);
         background-color: #FBFBFB;
         text-align: center;
+        overflow: hidden;
     }
     #subcontent03 {
         position: absolute;
         top: calc((100vw/1920)*370);
         left: 10%;
         width: 80%;
-        height: auto;
+        height: 1px;
         border: 1px solid #4848483b;
         border-radius: calc((100vw/1920)*40);
         background-color: #FBFBFB;
         text-align: center;
+        overflow: hidden;
     }
     #subcontent04 {
         position: absolute;
         top: calc((100vw/1920)*370);
         left: 10%;
         width: 80%;
-        height: auto;
+        height: 1px;
         border: 1px solid #4848483b;
         border-radius: calc((100vw/1920)*40);
         background-color: #FBFBFB;
         text-align: center;
+        overflow: hidden;
     }
 }
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 

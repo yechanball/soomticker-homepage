@@ -202,6 +202,30 @@ body {
         top: calc((100vw/1920)*670);
         left: calc((100vw/1920)*1606);
     }
+
+    .guideDirection {
+        position: absolute;
+        top: 37%;
+        left: calc((100vw/1920)*850);
+        width: calc((100vw/1920)*220);
+        padding-top: calc((100vw/1920)*25);
+        padding-bottom: calc((100vw/1920)*25);
+        z-index: 9999;
+        text-align: center;
+        border-radius: calc((100vw/1920)*50);
+        background-color: #E1AA4F;
+        visibility: hidden;
+    }
+    .guideDirection img { 
+        width: calc((100vw/1920)*70); 
+    }
+    .guideDirection p {
+        font-family: 'Noto Sans KR Regular';
+        font-size: calc((100vw/1920)*30);
+        color: #ffffff;
+        padding-bottom: calc((100vw/1920)*20);
+        margin: 0;
+    }
 }
 
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
@@ -385,5 +409,29 @@ body {
         position: absolute;
         top: calc((100vh/812)*623);
         left: 255px;
+    }
+
+    .guideDirection {
+        position: absolute;
+        top: 35%;
+        left: 30%;
+        width: 40%;
+        padding-top: calc((100vh/812)*20);
+        padding-bottom: calc((100vh/812)*20);
+        z-index: 9999;
+        text-align: center;
+        border-radius: calc((100vh/812)*20);
+        background-color: #E1AA4F;
+        visibility: hidden;
+    }
+    .guideDirection img { 
+        height: calc((100vh/812)*85);
+    }
+    .guideDirection p {
+        font-family: 'Noto Sans KR Regular';
+        font-size: calc((100vw/360)*24);
+        color: #ffffff;
+        padding-bottom: calc((100vh/812)*20);
+        margin: 0;
     }
 }
