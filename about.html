@@ -107,12 +107,31 @@
             </div>
         </div>
     </div>
+
+    <div class="guideDirection">
+        <p>스크롤 방향</p>
+        <img src="./src/img/direction_down.png" alt="□">
+    </div>
     
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./js/nav.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
+        setTimeout(function() {
+            const element = document.querySelector('.guideDirection');
+            element.style.visibility="visible";
+            element.classList.add('animate__animated', 'animate__fadeIn', 'animate__slow');
+
+            element.addEventListener('animationend', () => {
+                element.classList.add('animate__animated', 'animate__fadeOut', 'animate__slow');
+                
+                element.addEventListener('animationend', () => {
+                    element.style.visibility="hidden";
+                });
+            });
+        }, 1000);
+        
         const swiper = new Swiper('.swiper-container', {
             direction: 'vertical',
             loop: false,
