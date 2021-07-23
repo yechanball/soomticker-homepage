@@ -51,6 +51,7 @@ body {
         font-size: calc((100vw/1920)*40);
         color: #5A5A5A;
         background-color: #F5F5F5;
+        padding: 0;
         border: none;
         border-radius: calc((100vw/1920)*30);
         box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.16);
@@ -58,7 +59,7 @@ body {
     }
     .content > .sub-menu > button:hover { background-color: #E1AA4F; }
     .content > .sub-menu > .selected-sub-menu {
-        color: #FAFAFA;
+        color: #F5F5F5;
         background-color: #E1AA4F; 
     }
 
@@ -156,13 +157,14 @@ body {
         font-size: calc((100vw/480)*18);
         color: #5A5A5A;
         background-color: #F5F5F5;
+        padding: 0;
         border: none;
         border-radius: calc((100vw/480)*15);
         box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.16);
         cursor: pointer;
     }
     .content > .sub-menu > .selected-sub-menu {
-        color: #FAFAFA;
+        color: #F5F5F5;
         background-color: #E1AA4F; 
     }
 
