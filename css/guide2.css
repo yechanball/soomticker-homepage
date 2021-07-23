@@ -12,31 +12,62 @@ body {
     margin: 0;
 }
 
-.content {
-    position: relative;
-    width: 80%;
-    height: 100%;
-    margin: 0;
-}
+#subcontent01 { visibility: visible; }
+#subcontent02 { visibility: hidden; }
+#subcontent03 { visibility: hidden; }
+#subcontent04 { visibility: hidden; }
+#subcontent05 { visibility: hidden; }
 
 /* PC (해상도 1024px)*/
 @media all and (min-width:769px) {
+    .content {
+        position: relative;
+        width: 80%;
+        height: 100%;
+        margin: 0;
+    }
+    
+    .content > .sub-menu {
+        width: 100%;
+        text-align: center;
+    }
+
     .content h1 {
         margin-top: calc((100vw/1920)*150);
-        margin-bottom: calc((100vw/1920)*80);
+        margin-bottom: calc((100vw/1920)*60);
         text-align: center;
-        font-family: 'Noto Sans KR Black';
+        font-family: 'Noto Sans KR Bold';
         font-size: calc((100vw/1920)*60);
         line-height: calc((100vw/1920)*80);
         color: #5D5D5D;
     }
 
+    .content > .sub-menu > button {
+        width: calc((100vw/1920)*200);
+        height: calc((100vw/1920)*80);
+        margin-left: calc((100vw/1920)*40);
+        margin-right: calc((100vw/1920)*40);
+        font-family: 'Noto Sans KR Bold';
+        font-size: calc((100vw/1920)*40);
+        color: #5A5A5A;
+        background-color: #F5F5F5;
+        border: none;
+        border-radius: calc((100vw/1920)*30);
+        box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.16);
+        cursor: pointer;
+    }
+    .content > .sub-menu > button:hover { background-color: #E1AA4F; }
+    .content > .sub-menu > .selected-sub-menu {
+        color: #FAFAFA;
+        background-color: #E1AA4F; 
+    }
+
     .accordion {
+        position: absolute;
         list-style:none;
         padding:0;	
         width: 100%;
         margin: 50px auto 100px auto;
-        border-top: 2px solid #D0BEBE;
     }
 
     .accordion li {
@@ -47,7 +78,7 @@ body {
     
     .accordion li p {
         display: none;
-        padding: 10px calc((100vw/1920)*55) 30px;
+        padding: 10px calc((100vw/1920)*55);
         font-family: 'Noto Sans KR Medium';
         font-size: calc((100vw/1920)*22);
         line-height: calc((100vw/1920)*36);
@@ -94,6 +125,18 @@ body {
 }*/
 /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
 @media all and (max-width:768px) {
+    .content {
+        position: relative;
+        width: 90%;
+        height: 100%;
+        margin: 0;
+    }
+    
+    .content > .sub-menu {
+        width: 100%;
+        text-align: center;
+    }
+
     .content h1 {
         margin-top: 10vh;
         margin-bottom: 4vh;
@@ -104,12 +147,31 @@ body {
         color: #5D5D5D;
     }
 
+    .content > .sub-menu > button {
+        width: calc((100vw/480)*70);
+        height: calc((100vw/480)*40);
+        margin-left: calc((100vw/480)*2);
+        margin-right: calc((100vw/480)*2);
+        font-family: 'Noto Sans KR Bold';
+        font-size: calc((100vw/480)*18);
+        color: #5A5A5A;
+        background-color: #F5F5F5;
+        border: none;
+        border-radius: calc((100vw/480)*15);
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.16);
+        cursor: pointer;
+    }
+    .content > .sub-menu > .selected-sub-menu {
+        color: #FAFAFA;
+        background-color: #E1AA4F; 
+    }
+
     .accordion {
+        position: absolute;
         list-style:none;
         padding:0;	
         width: 100%;
         margin: 25px auto 50px auto;
-        border-top: 0.5px solid #D0BEBE;
     }
 
     .accordion li {
@@ -120,21 +182,21 @@ body {
     
     .accordion li p {
         display: none;
-        padding: 5px 10px 10px;
+        padding: 5px calc((100vw/480)*28);
         font-family: 'Noto Sans KR Medium';
-        font-size: calc((100vw/480)*13);
-        line-height: calc((100vw/480)*23);
+        font-size: calc((100vw/480)*17);
+        line-height: calc((100vw/480)*30);
         color: #484848;
     }
 
     .accordion a {
-        width: 100%;
+        width: auto;
         display: block;
         cursor: pointer;
         font-family: 'Noto Sans KR Bold';
-        font-size: calc((100vw/480)*18);
+        font-size: calc((100vw/480)*20);
         line-height: calc((100vw/480)*30);
-        text-indent: calc((100vw/480)*28);
+        padding-left: calc((100vw/480)*28);
         margin-top: calc((100vw/480)*10);
         margin-bottom: calc((100vw/480)*10);
         color: #484848;
@@ -149,7 +211,7 @@ body {
         position: absolute;
         left: calc((100vw/480)*5);
         content: " ";
-        top: calc((100vw/480)*10);
+        top: calc((100vw/480)*8);
         transform: rotate(-45deg);
         -webkit-transition: all 0.2s ease-in-out;
         -moz-transition: all 0.2s ease-in-out;
