@@ -1,2 +1,1 @@
-# homepage
-https://yechan-nfc.github.io/homepage
+# Soomticker homepage
